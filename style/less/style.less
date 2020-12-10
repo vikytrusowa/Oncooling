@@ -1,0 +1,333 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../../fonts/BebasNeueBold.eot');
+  src: url('../../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/BebasNeueBold.woff') format('woff'),
+  url('../../fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.content-container {
+  max-width: 1180px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #373D4F;
+  padding: 0;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    border-bottom: 3px solid #F4A93D;
+    border-radius: 1.5px;
+    width: 77px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    border-bottom: 1px solid #7B8196;
+    width: 100%;
+  }
+}
+
+.content-number {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #D2D6E1;
+  padding: 0;
+  margin-bottom: 26px;
+
+  &-active {
+    font-size: 40px;
+    color: #858CA3;
+  }
+}
+
+.content-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #373D4F;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #373D4F;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.header {
+  padding: 48px 0 20px;
+
+  &__heading {
+    margin-bottom: 55px;
+    padding: 0;
+  }
+
+  &__logo {
+    text-decoration: none;
+
+    &--icon {
+      margin-right: 17px;
+    }
+
+    &--text {
+      margin: 0;
+    }
+
+    &--name {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 120%;
+      color: #373D4F;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    &--info {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 9px;
+      line-height: 100%;
+      color: #7B8196;
+      display: block;
+    }
+  }
+
+  &__menu {
+    justify-content: space-between;
+    width: 57.8%;
+
+    &--link {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #373D4F;
+      padding: 0;
+
+      &:hover {
+        font-weight: bold;
+        color: #373D4F;
+      }
+    }
+  }
+
+  &__search {
+    border: 1px solid #D2D6E1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 7px 17px 7px 16px;
+
+    &--input {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #D2D6E1;
+      border: none;
+      background: transparent;
+      padding: 0;
+
+      &:hover,
+      &:visited,
+      &:focus,
+      &:active,
+      &:focus-within,
+      &:focus-visible {
+        outline: none;
+        border-color: transparent;
+        box-shadow: none;
+        background: transparent;
+      }
+    }
+
+    &--button {
+      background: transparent;
+      border: none;
+      padding: 0;
+
+    }
+  }
+
+  &__login {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #373D4F;
+    padding: 0;
+    margin-right: 25px;
+
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active,
+    &:focus-within,
+    &:focus-visible {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    &--text {
+      margin-right: 7px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        border-bottom: 2px #7B8196 solid;
+        background: #7B8196;
+        border-radius: 1.5px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    padding: 0;
+  }
+
+  &__title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #373D4F;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #373D4F;
+    opacity: 0.7;
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__section {
+    position: absolute;
+    top: 30px;
+    left: 13%;
+
+    &--item {
+      background: #FFFFFF;
+      border: 1px solid #373D4F;
+      box-sizing: border-box;
+      text-decoration: none;
+      padding: 20px;
+      display: block;
+      height: 126px;
+      width: 135px;
+    }
+
+    &--name {
+      font-family: "Bebas Neue";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: #373D4F;
+      display: block;
+    }
+
+    &--link {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 11px;
+      color: #F4A93D;
+      opacity: 0.7;
+      position: relative;
+    }
+  }
+}
+
+.header .header__search .header__search--button {
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active,
+  &:focus-within,
+  &:focus-visible {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.header__section--item:hover .header__section--link:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  border-radius: 1.5px;
+  border-bottom: 3px solid #F4A93D;
+}
+
+.diseases {
+  margin-bottom: 174px;
+
+  &__title {
+    margin-bottom: 120px;
+  }
+
+  &__content {
+    padding: 0;
+  }
+}
+
+.activity {
+  &--title {
+    margin-bottom: 107px;
+  }
+}
