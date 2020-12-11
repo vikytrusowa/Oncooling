@@ -303,7 +303,7 @@
   top: 30px;
   left: 10%;
   width: 21%;
-  z-index: 9;
+  z-index: 1;
 }
 .header__section--item {
   margin: 0 auto;
@@ -312,7 +312,7 @@
   padding: 20px;
   display: block;
   height: 126px;
-  width: 135px;
+  max-width: 135px;
   position: relative;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -328,7 +328,7 @@
   border: 1px solid #373D4F;
 }
 .header__section--item:hover {
-  width: 165px;
+  z-index: 999;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .header__section--name {
@@ -384,8 +384,8 @@
   border-bottom: 3px solid #F4A93D;
 }
 .header__section--item:hover:after {
-  z-index: 8;
-  height: 131px;
+  top: -2px;
+  transform: scale(1.1, 1.1);
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .diseases {
@@ -593,6 +593,9 @@
 .diagnosis__title {
   margin-bottom: 110px;
 }
+.diagnosis__block {
+  margin-right: 5%;
+}
 .therapy {
   position: relative;
   padding-bottom: 183px;
@@ -603,8 +606,47 @@
 .therapy__title {
   margin-bottom: 108px;
 }
+.partners {
+  padding-bottom: 120px;
+  position: relative;
+}
+.partners__name {
+  bottom: -152px;
+}
 .partners__title {
   margin-bottom: 120px;
+}
+.partners__block {
+  margin-bottom: 67px;
+}
+.partners__wrap {
+  margin-bottom: 26px;
+  width: 75%;
+}
+.partners__subtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #373D4F;
+}
+.partners__inner {
+  width: 47%;
+}
+.partners__gallery {
+  flex-wrap: wrap;
+}
+.partners__image {
+  width: 48%;
+  margin-bottom: 30px;
+}
+.partners__image--active {
+  border: 1px solid #373D4F;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 25px rgba(44, 10, 0, 0.14));
 }
 .footer {
   margin-bottom: 116px;
