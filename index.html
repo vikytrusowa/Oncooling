@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/style.css?ver=3">
 </head>
 <body>
 <header class="header">
@@ -46,12 +46,14 @@
                 </li>
             </ul>
             <div class="d-flex flex-row justify-content-between align-items-center">
-                <button class="btn header__login"><span class="header__login--text">Вход</span><img src="img/home/login.svg"
-                                                                                                    alt="login"></button>
+                <button class="btn header__login"><span class="header__login--text">Вход</span><img
+                        src="img/home/login.svg"
+                        alt="login"></button>
                 <form class="d-flex header__search justify-content-around">
                     <input class="form-control mr-2 header__search--input" type="search" placeholder="Поиск"
                            aria-label="Search">
-                    <button class="btn  header__search--button" type="submit"><img src="img/home/search.svg" alt="search">
+                    <button class="btn  header__search--button" type="submit"><img src="img/home/search.svg"
+                                                                                   alt="search">
                     </button>
                 </form>
             </div>
@@ -65,76 +67,292 @@
             </div>
             <div class="col-md-8 header__wrap d-flex flex-column justify-content-between align-items-end">
                 <div class="header__section">
-                    <a class="header__section--item d-flex flex-column justify-content-between align-items-start" href="#">
+                    <a class="header__section--item d-flex flex-column justify-content-between align-items-start"
+                       href="#">
                         <span class="header__section--name">Как снизить свой риск заболеть			</span>
                         <span class="header__section--link">Узнать -></span>
                     </a>
-                    <a class="header__section--item  d-flex flex-column justify-content-between align-items-start" href="#">
+                    <a class="header__section--item  d-flex flex-column justify-content-between align-items-start"
+                       href="#">
                         <span class="header__section--name">Если поставили диагноз:		</span>
-                        <span class="header__section--link">Что делать ->
-</span>
+                        <span class="header__section--link">Что делать -></span>
                     </a>
-                    <a class="header__section--item  d-flex flex-column justify-content-between align-items-start" href="#">
+                    <a class="header__section--item  d-flex flex-column justify-content-between align-items-start"
+                       href="#">
                         <span class="header__section--name">Тем, кто проходит курс лечения:					</span>
-                        <span class="header__section--link">Полезная информация ->
-</span>
+                        <span class="header__section--link">Полезная информация -></span>
                     </a>
                 </div>
                 <img src="img/home/header.png" alt="" class="header__image">
-                <div>
-                    <a href="#"> <img src="img/home/vkontakte.svg" alt=""></a>
-                    <a href="#"> <img src="img/home/instagram.svg" alt=""></a>
-                    <a href="#"> <img src="img/home/facebook.svg" alt=""></a>
+                <div class="header__social d-flex flex-row justify-content-between align-items-center">
+                    <a href="#"> <img src="img/home/vkontakte.svg" alt="vkontakte"></a>
+                    <a href="#"> <img src="img/home/instagram.svg" alt="instagram"></a>
+                    <a href="#"> <img src="img/home/facebook.svg" alt="facebook"></a>
                 </div>
             </div>
         </div>
     </div>
 </header>
 <section class="diseases">
-    <div class="content-container row">
+    <div class="content-container row ">
         <p class="content-number"><span class="content-number-active">01</span>/08</p>
         <h2 class="content-title diseases__title">Онкологические заболевания</h2>
-        <div class="diseases__content d-flex ">
+        <div class="diseases__content d-flex flex-row justify-content-between ">
             <img src="img/home/diseases.png" alt="diseases" class="col-md-8">
-            <div>
-                <h3>Диагноз – не приговор. Рак излечим. Узнайте о видах онкологических заболеваний и методах борьбы с ними</h3>
-                <a>Онкологические заболевания -></a>
+            <div class="diseases__wrap">
+                <div class="diseases__block">
+                    <h3 class="diseases__subtitle">Диагноз – не приговор. Рак излечим. Узнайте о видах онкологических
+                        заболеваний и методах борьбы с ними</h3>
+                    <a href="#" class="content-link">Онкологические заболевания -></a>
+                </div>
             </div>
         </div>
+
     </div>
+    <span class="content-name">О нас</span>
 </section>
 <section class="activity">
     <div class="content-container row">
         <p class="content-number"><span class="content-number-active">02</span>/08</p>
         <h2 class="content-title activity__title">МЕроприятия</h2>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/home/activity1.png" class="d-block " alt="...">
-                    <span>10.11.2020</span>
-                    <h3>ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
-                    <p>Актуализация проблемы доверия
-                        к российской онкологии: врачам
-                        и их профессионализму, оснащённости
-                    </p>
-                    <a class="content-button" href="#">подробнее</a>
+            <div class="carousel-inner activity__slider d-flex flex-row justify-content-between align-items-start">
+                <div class="carousel-item active activity__slide">
+                    <div>
+                        <img src="img/home/activity1.png" class="d-block activity__image" alt="...">
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <a class="content-button" href="#">подробнее</a>
+                        </div>
+                    </div>
                 </div>
-              
+                <div class="carousel-item  activity__slide">
+                    <div>
+                        <img src="img/home/activity2.png" class="d-block activity__image" alt="...">
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <a class="content-button" href="#">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  activity__slide">
+                    <div>
+                        <img src="img/home/activity3.png" class="d-block activity__image" alt="...">
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <a class="content-button" href="#">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  activity__slide">
+                    <div>
+                        <img src="img/home/activity4.png" class="d-block activity__image" alt="...">
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <a class="content-button" href="#">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  activity__slide">
+                    <div>
+                        <img src="img/home/activity1.png" class="d-block activity__image" alt="...">
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <a class="content-button" href="#">подробнее</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a class="carousel-control-prev activity__prev" href="#carouselExampleControls" role="button"
+               data-slide="prev">
+                <!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                <!--                <span class="sr-only">Previous</span>-->
+                <img src="img/home/arrow.svg">
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a class="carousel-control-next  activity__next" href="#carouselExampleControls" role="button"
+               data-slide="next">
+                <!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                <!--                <span class="sr-only">Next</span>-->
+                <img src="img/home/arrow.svg">
             </a>
         </div>
     </div>
 </section>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+<section></section>
+<section class="risk">
+    <div class="content-container row">
+        <p class="content-number"><span class="content-number-active">04</span>/08</p>
+        <h2 class="content-title activity__title">Как снизить риск развития рака</h2>
+        <div class="risk__content d-flex flex-row justify-content-between">
+            <ul class="risk__list">
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Тест: «Находитесь ли вы в группе риска</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Статистика</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Онкоскрининг</a>
+                </li>
+            </ul>
+            <img src="img/home/risk.png" alt="diseases" class="col-md-8">
+        </div>
+    </div>
+    <span class="content-name risk__name">не заболеть</span>
+</section>
+<section class="diagnosis">
+    <div class="content-container row">
+        <p class="content-number"><span class="content-number-active">05</span>/08</p>
+        <h2 class="content-title diagnosis__title">Диагноз – рак. Как жить дальше?</h2>
+        <div class="diagnosis__content d-flex flex-row justify-content-between">
+            <img src="img/home/diagnosis.png" alt="diagnosis" class="col-md-8">
+            <ul class="risk__list">
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Пошаговая инструкция для пациентов</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Пациентские организации</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Истории успеха</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <span class="content-name diagnosis__name">Диагноз</span>
+</section>
+<section class="therapy">
+    <div class="content-container row">
+        <p class="content-number"><span class="content-number-active">06</span>/08</p>
+        <h2 class="content-title therapy__title">Терапия: что нужно знать о лечении рака?</h2>
+        <div class="risk__content d-flex flex-row justify-content-between">
+            <ul class="risk__list">
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Где лечиться</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Набор пациентов на экспериментальное лечение</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Паллиативная помощь</a>
+                </li>
+                <li class="risk__item">
+                    <a class="content-link risk__link" href="#">Перечень ЖНВЛП</a>
+                </li>
+            </ul>
+            <img src="img/home/therapy.png" alt="therapy" class="col-md-8">
+        </div>
+    </div>
+    <span class="content-name therapy__name">Лечение</span>
+</section>
+<section class="partners">
+    <div class="content-container row">
+        <p class="content-number"><span class="content-number-active">07</span>/08</p>
+        <h2 class="content-title partners__title">Наши партнеры</h2>
+    </div>
+</section>
+<footer class="footer">
+    <div class="content-container row">
+        <p class="content-number"><span class="content-number-active">08</span>/08</p>
+        <h2 class="content-title footer__title">Контакты</h2>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="footer__social footer__line">
+                <a href="#" class="footer__social--link"><img src="img/home/facebook.svg"></a>
+                <a href="#" class="footer__social--link"><img src="img/home/instagram.svg"></a>
+                <a href="#" class="footer__social--link"><img src="img/home/vkontakte.svg"></a>
+            </div>
+            <div class=" footer__line">
+                <a class="footer__logo d-flex flex-row justify-content-between align-items-center" href="#"><img
+                        src="img/home/logo.svg" class="header__logo--icon" alt="logo">
+                    <p class="header__logo--text"><span class="header__logo--name">ОНКОПРОСВЕЩЕНИЕ</span>
+                        <span class="header__logo--info">Национальный проект</span></p></a>
+                <a href="#"><img src="img/home/aor.png"></a>
+            </div>
+            <div class="footer__menu  footer__line d-flex flex-row justify-content-between align-items-start">
+                <ul class="nav footer__list d-flex flex-column justify-content-between align-items-start">
+                    <li class="nav-item footer__item">
+                        <a class="nav-link footer__link" href="#">Главная
+                        </a>
+                    </li>
+                    <li class="nav-item footer__item">
+                        <a class="nav-link footer__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav-item footer__item">
+                        <a class="nav-link footer__link" href="#">Мероприятия</a>
+                    </li>
+                    <li class="nav-item footer__item">
+                        <a class="nav-link  footer__link" href="#">База знаний</a>
+                    </li>
+                </ul>
+                <ul class="nav footer__list d-flex flex-column justify-content-between align-items-start">
+                    <li class="nav-item footer__item">
+                        <a class="nav-link footer__link" href="#">Помощь пациентам
+                        </a>
+                    </li>
+                    <li class="nav-item footer__item">
+                        <a class="nav-link footer__link" href="#">Реабилитация</a>
+                    </li>
+                    <li class="nav-item footer__item">
+                        <a class="nav-link footer__link" href="#">Виды рака</a>
+                    </li>
+                    <li class="nav-item footer__item">
+                        <a class="nav-link  footer__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer__info">
+                <li class="footer__info--item d-flex flex-row  align-items-center"><img
+                        src="img/home/phone.svg" alt="phone" class="footer__icon"><a class="footer__info--link"
+                                                                                     href="#">+7
+                    (495) 988-47-25</a></li>
+                <li class="footer__info--item d-flex flex-row  align-items-center"><img
+                        src="img/home/marker.svg" alt="marker" class="footer__icon">123290,
+                    Москва, Причальный проезд,<br> д.8, корп.1 оф. 431
+                </li>
+                <li class="footer__info--item d-flex flex-row align-items-center">
+                    <img src="img/home/email.svg" alt="email" class="footer__icon">
+                    <div>
+                        <a class="footer__info--link" href="#">info@oncology-association.ru</a><br>
+                        <a class="footer__info--link" href="#">contact@nmicr.ru </a><span>(контакт для СМИ)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
+        integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
