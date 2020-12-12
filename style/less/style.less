@@ -347,7 +347,11 @@
 
   &__image {
     display: block;
+    width: 100%;
     margin-bottom: 28px;
+    &--mob{
+      display: none;
+    }
   }
 
   &__wrap {
@@ -534,7 +538,8 @@
     width: 29% !important;
     margin: 0 -15px;
     max-height: 432px;
-    &:hover{
+
+    &:hover {
       z-index: 99;
     }
   }
@@ -1053,8 +1058,9 @@
     object-position: center;
     outline: none;
   }
-  &__text{
-    font-family: "Roboto",sans-serif;
+
+  &__text {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1225,73 +1231,158 @@
   }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .partners__gallery .partners__item .partners__tabs:after {
     width: 230px;
     height: 115px;
   }
+
   .footer__wrap {
     width: 93%;
   }
+
   .footer__menu {
     width: 35%;
   }
+
   .footer__info {
     width: 37%;
   }
+
   .footer__line:after {
     right: -17px;
   }
 }
-@media screen and (max-width: 990px){
 
-  .partners__content{
+@media screen and (max-width: 990px) {
+  .diseases__content {
     flex-direction: column-reverse;
   }
-  .partners__gallery{
+
+  .diseases__slider {
     width: 100%;
   }
-  .partners__info{
+
+  .diseases__wrap {
+    margin: 0 0 30px;
+  }
+
+  .diseases__block {
+    margin: 0;
+  }
+
+  .risk__content {
+    flex-direction: column;
+  }
+
+  .diagnosis__content {
+    flex-direction: column-reverse;
+  }
+
+  .partners__content {
+    flex-direction: column-reverse;
+  }
+
+  .partners__gallery {
     width: 100%;
   }
+
+  .partners__info {
+    width: 100%;
+  }
+
   .footer__wrap {
     flex-flow: wrap;
     width: 85%;
     justify-content: space-around;
   }
+
   .footer__info {
     width: 51%;
   }
+
   .footer__menu {
     width: 52%;
     margin-bottom: 30px;
   }
+
   .footer__line:after {
     display: none;
   }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+  }
+
+  .header__text {
+    margin-bottom: 130px;
+  }
+
+  .header__section {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    top: -63px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+.header__image{
+  display: none;
+}
+.header__image--mob{
+  display: block;
+}
+  .header__social {
+    width: 30%;
+   margin: 0 auto;
+  }
   .footer__wrap {
     width: 93%;
   }
+
   .footer__info {
     width: 66%;
   }
+
+  .risk__content {
+    flex-direction: column;
+  }
 }
+
 @media screen and (max-width: 576px) {
+  .activity__title {
+    margin-bottom: 50px;
+  }
+
+  .diagnosis__title {
+    margin-bottom: 50px;
+  }
+
+  .therapy__title {
+    margin-bottom: 46px;
+  }
+
   .partners__title {
     margin-bottom: 60px;
   }
+
   .content-number {
     text-align: center;
   }
+
   .footer__content {
     flex-direction: column;
     flex-flow: column-reverse;
   }
+
   .footer__title {
     margin-bottom: 77px;
   }
+
   .footer__menu {
     display: none !important;
   }
@@ -1317,7 +1408,6 @@
   }
 
 
-
   .footer__partners {
     display: flex;
     flex-direction: row;
@@ -1327,7 +1417,8 @@
     margin: 0 auto 100px;
 
   }
-  .footer__partners:before{
+
+  .footer__partners:before {
     content: "";
     width: 80%;
     left: 0;
@@ -1337,19 +1428,23 @@
     border-bottom: 1px solid #D2D6E1;
     bottom: -45px;
   }
+
   .footer__wrap {
     width: 100%;
     flex-direction: column;
     margin-bottom: 42px;
   }
 }
-@media screen and (max-width: 460px){
-  .footer__partners{
+
+@media screen and (max-width: 460px) {
+  .footer__partners {
     flex-direction: column;
   }
+
   .footer__logo {
     margin-bottom: 30px;
   }
+
   .footer__info {
     width: 100%;
   }

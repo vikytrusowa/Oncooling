@@ -14,7 +14,9 @@ var swiper = new Swiper('.activity__slider', {
     nextButton: '.activity__next',
     prevButton: '.activity__prev',
     breakpoints: {
-        480: {}
+        480: {
+            slidesPerView: "auto",
+        }
     }
 });
 var swiper2 = new Swiper('.news__slider', {
@@ -25,7 +27,9 @@ var swiper2 = new Swiper('.news__slider', {
     nextButton: '.news__next',
     prevButton: '.news__prev',
     breakpoints: {
-        480: {}
+        480: {
+            slidesPerView: "auto",
+        }
     }
 });
 // $('#carousel-example').on('slide.bs.carousel', function (e) {
