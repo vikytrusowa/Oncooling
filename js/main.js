@@ -7,9 +7,10 @@ var swiper = new Swiper('.diseases__slider', {
 });
 var swiper = new Swiper('.activity__slider', {
     slidesPerView: 4,
-    spaceBetween: 21,
+    //spaceBetween: 21,
     slidesPerGroup: 1,
     loop: true,
+    zoom: 5,
     nextButton: '.activity__next',
     prevButton: '.activity__prev',
     breakpoints: {
