@@ -1,3 +1,10 @@
+var swiper = new Swiper('.diseases__slider', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: 5000,
+});
 var swiper = new Swiper('.activity__slider', {
     slidesPerView: 4,
     spaceBetween: 21,
