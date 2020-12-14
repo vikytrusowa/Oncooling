@@ -641,9 +641,10 @@
 
 }
 
-.activity .activity__slider .swiper-slide-prev{
+.activity .activity__slider .swiper-slide-prev {
   opacity: 0;
 }
+
 .activity .activity__slider .activity__item:hover:after {
   content: "";
   background: #FFFFFF;
@@ -652,13 +653,11 @@
   bottom: 0;
   z-index: -1;
   position: absolute;
-  //margin-right: 0 !important;
-  //margin-left: -32px;
   left: -22px;
   right: -22px;
   top: -32px;
-  //transform: scale(1.2, 1.1);
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
+  transition: .1s linear;
 }
 
 .activity .activity__slider .activity__item:hover .activity__image {
@@ -666,7 +665,7 @@
   top: -32px;
   left: -22px;
   right: -22px;
-  transition: .1s linear;
+  transition: .2s linear;
 }
 
 .activity .activity__slider .activity__item:hover .content-button {
@@ -699,7 +698,6 @@
       z-index: 99;
     }
   }
-
 
 
   &__item {
@@ -746,9 +744,10 @@
   }
 }
 
-.news .news__slider .swiper-slide-prev{
+.news .news__slider .swiper-slide-prev {
   opacity: 0;
 }
+
 .news .news__slider .news__item:hover:after {
   content: "";
   background: #FFFFFF;
@@ -757,12 +756,10 @@
   bottom: 0;
   z-index: -1;
   position: absolute;
-  //margin-right: 0 !important;
-  //margin-left: -32px;
   left: -22px;
   right: -22px;
   top: -32px;
-  //transform: scale(1.2, 1.1);
+  transition: .1s linear;
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 }
 
@@ -771,7 +768,7 @@
   top: -32px;
   left: -22px;
   right: -22px;
-  transition: .1s linear;
+  transition: .2s linear;
 }
 
 .news .news__slider .news__item:hover .content-button {
@@ -1221,6 +1218,10 @@
     font-size: 170px;
   }
 
+  .header {
+    padding: 48px 0 66px;
+  }
+
   .partners__slider {
     display: block;
     width: 100%;
@@ -1433,6 +1434,14 @@
     display: none;
   }
 
+  .activity {
+    margin-bottom: 100px;
+  }
+
+  .news {
+    padding-bottom: 95px;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1464,18 +1473,22 @@
   .header__wrap {
     width: 100%;
   }
+
   .activity__slider {
     width: 100%;
   }
+
   .activity__next,
   .activity__prev,
   .news__next,
-  .news__prev{
-   display: none;
+  .news__prev {
+    display: none;
   }
+
   .news__slider {
     width: 100%;
   }
+
   .footer__wrap {
     width: 93%;
   }
@@ -1523,6 +1536,10 @@
 
   .therapy__title {
     margin-bottom: 46px;
+  }
+
+  .diseases__title {
+    margin-bottom: 54px;
   }
 
   .partners__title {
@@ -1593,6 +1610,7 @@
     flex-direction: column;
     margin-bottom: 42px;
   }
+
   .activity__slide {
     width: 75%;
   }

@@ -562,13 +562,14 @@
   right: -22px;
   top: -32px;
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
+  transition: 0.1s linear;
 }
 .activity .activity__slider .activity__item:hover .activity__image {
   height: 162px;
   top: -32px;
   left: -22px;
   right: -22px;
-  transition: 0.1s linear;
+  transition: 0.2s linear;
 }
 .activity .activity__slider .activity__item:hover .content-button {
   color: #F4A93D;
@@ -646,6 +647,7 @@
   left: -22px;
   right: -22px;
   top: -32px;
+  transition: 0.1s linear;
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 }
 .news .news__slider .news__item:hover .news__image {
@@ -653,7 +655,7 @@
   top: -32px;
   left: -22px;
   right: -22px;
-  transition: 0.1s linear;
+  transition: 0.2s linear;
 }
 .news .news__slider .news__item:hover .content-button {
   color: #F4A93D;
@@ -1016,6 +1018,9 @@
   .content-name {
     font-size: 170px;
   }
+  .header {
+    padding: 48px 0 66px;
+  }
   .partners__slider {
     display: block;
     width: 100%;
@@ -1184,6 +1189,13 @@
   .footer__line:after {
     display: none;
   }
+  .activity {
+    margin-bottom: 100px;
+  }
+  .news {
+    padding-bottom: 95px;
+    position: relative;
+  }
 }
 @media screen and (max-width: 768px) {
   .content-name {
@@ -1258,6 +1270,9 @@
   }
   .therapy__title {
     margin-bottom: 46px;
+  }
+  .diseases__title {
+    margin-bottom: 54px;
   }
   .partners__title {
     margin-bottom: 60px;
