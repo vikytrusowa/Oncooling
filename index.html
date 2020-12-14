@@ -12,12 +12,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/css/style.css?ver=4">
+    <link rel="stylesheet" href="style/css/style.css?ver=5">
 </head>
 <body>
 <header class="header">
     <div class="content-container row">
-        <div class="header__heading d-flex flex-row justify-content-between align-items-center">
+
+        <div class="header__heading content-row justify-content-between align-items-center">
+            <div class="header__menu-mobile">
+                <div class="header__wrapper">
+                    <div class="content-row header__block justify-content-between">
+                        <a class="header__menu--open" href="#"><img src="img/home/menu.svg"></a>
+                        <form class="content-row header__search header__search--inner justify-content-around">
+                            <input class="form-control mr-2 header__search--input" type="search" placeholder="Поиск"
+                                   aria-label="Search">
+                            <button class="btn  header__search--button" type="submit"><img src="img/home/search.svg"
+                                                                                           alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="nav header__menu header__menu--inner">
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link active" aria-current="page" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link" href="#">Мероприятия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link" href="#">База знаний</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link" href="#">Помощь пациентам</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link" href="#">Реабилитация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link" href="#">Виды рака</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__menu--link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <a class="header__logo d-flex flex-row justify-content-between align-items-center" href="#"><img
                     src="img/home/logo.svg" class="header__logo--icon" alt="logo">
                 <p class="header__logo--text"><span class="header__logo--name">ОНКОПРОСВЕЩЕНИЕ</span>
@@ -50,7 +88,7 @@
                 <button class="btn header__login"><span class="header__login--text">Вход</span><img
                         src="img/home/login.svg"
                         alt="login"></button>
-                <form class="d-flex header__search justify-content-around">
+                <form class="content-row header__search justify-content-around">
                     <input class="form-control mr-2 header__search--input" type="search" placeholder="Поиск"
                            aria-label="Search">
                     <button class="btn  header__search--button" type="submit"><img src="img/home/search.svg"
@@ -61,24 +99,24 @@
 
         </div>
         <div class="header__content content-row justify-content-between align-items-center">
-            <div class="col-xl-4 col-md-6 col-12">
+            <div class="col-xl-4 header__info">
                 <h1 class="header__title">Информационный портал
                     о профилактике, диагностике и лечениИ онкологических заболеваний</h1>
                 <p class="header__text">Для тех, кто не хочет заболеть, или уже борется с болезнью</p>
             </div>
-            <div class="col-xl-8 col-md-6  col-12 header__wrap d-flex flex-column justify-content-between align-items-end">
+            <div class=" header__wrap d-flex flex-column justify-content-between align-items-end">
                 <div class="header__section">
-                    <a class="header__section--item d-flex flex-column justify-content-between align-items-start"
+                    <a class="header__section--item content-column justify-content-between align-items-start"
                        href="#">
                         <span class="header__section--name">Как снизить свой риск заболеть			</span>
                         <span class="header__section--link">Узнать -></span>
                     </a>
-                    <a class="header__section--item  d-flex flex-column justify-content-between align-items-start"
+                    <a class="header__section--item   content-column justify-content-between align-items-start"
                        href="#">
                         <span class="header__section--name">Если поставили диагноз:		</span>
                         <span class="header__section--link">Что делать -></span>
                     </a>
-                    <a class="header__section--item  d-flex flex-column justify-content-between align-items-start"
+                    <a class="header__section--item   content-column justify-content-between align-items-start"
                        href="#">
                         <span class="header__section--name">Тем, кто проходит курс лечения:					</span>
                         <span class="header__section--link">Полезная информация -></span>
@@ -86,10 +124,10 @@
                 </div>
                 <img src="img/home/header.png" alt="" class="header__image">
                 <img src="img/home/header-mob.png" alt="" class="header__image--mob">
-                <div class="header__social d-flex flex-row justify-content-between align-items-center">
-                    <a href="#"> <img src="img/home/vkontakte.svg" alt="vkontakte"></a>
-                    <a href="#"> <img src="img/home/instagram.svg" alt="instagram"></a>
-                    <a href="#"> <img src="img/home/facebook.svg" alt="facebook"></a>
+                <div class="header__social content-row justify-content-between align-items-center">
+                    <a href="#" class="header__social--link"> <img src="img/home/vkontakte.svg" alt="vkontakte"></a>
+                    <a href="#" class="header__social--link"> <img src="img/home/instagram.svg" alt="instagram"></a>
+                    <a href="#" class="header__social--link"> <img src="img/home/facebook.svg" alt="facebook"></a>
                 </div>
             </div>
         </div>
@@ -235,7 +273,9 @@
                 <!-- Slides -->
                 <div class="swiper-slide activity__slide">
                     <a class="activity__item" href="#">
-                        <img src="img/home/activity1.png" class="d-block activity__image" alt="...">
+                        <div class="activity__picture">
+                            <img src="img/home/activity1.png" class="activity__image" alt="...">
+                        </div>
                         <div class="activity__info">
                             <span class="activity__data">10.11.2020</span>
                             <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
@@ -249,7 +289,9 @@
                 </div>
                 <div class="swiper-slide activity__slide">
                     <a class="activity__item" href="#">
-                        <img src="img/home/activity2.png" class="d-block activity__image" alt="...">
+                        <div class="activity__picture">
+                            <img src="img/home/activity2.png" class="d-block activity__image" alt="...">
+                        </div>
                         <div class="activity__info">
                             <span class="activity__data">10.11.2020</span>
                             <h3 class="activity__subtitle">Всероссийский курс молодого онколога. ТОРАКАЛЬНАЯ
@@ -258,62 +300,71 @@
                                 к российской онкологии: врачам
                                 и их профессионализму, оснащённости
                             </p>
-                            <span class="content-button" >подробнее</span>
+                            <span class="content-button">подробнее</span>
                         </div>
                     </a>
                 </div>
                 <div class="swiper-slide activity__slide">
                     <a class="activity__item" href="#">
-                    <img src="img/home/activity3.png" class="d-block activity__image" alt="...">
-                    <div class="activity__info">
-                        <span class="activity__data">10.11.2020</span>
-                        <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
-                        <p class="activity__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                            мешает сосредоточиться
-                        </p>
-                        <span class="content-button">подробнее</span>
-                    </div>
+                        <div class="activity__picture">
+                            <img src="img/home/activity3.png" class="d-block activity__image" alt="...">
+                        </div>
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                                мешает сосредоточиться
+                            </p>
+                            <span class="content-button">подробнее</span>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide activity__slide">
                     <a class="activity__item" href="#">
-                    <img src="img/home/activity4.png" class="d-block activity__image" alt="...">
-                    <div class="activity__info">
-                        <span class="activity__data">10.11.2020</span>
-                        <h3 class="activity__subtitle">Терапия пациентов с мКРР с позиций доказательной медицины</h3>
-                        <p class="activity__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                            мешает сосредоточиться на смсысловой составляющей...
-                        </p>
-                        <span class="content-button">подробнее</span>
-                    </div>
+                        <div class="activity__picture">
+                            <img src="img/home/activity4.png" class="d-block activity__image" alt="...">
+                        </div>
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">Терапия пациентов с мКРР с позиций доказательной
+                                медицины</h3>
+                            <p class="activity__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                                мешает сосредоточиться на смсысловой составляющей...
+                            </p>
+                            <span class="content-button">подробнее</span>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide activity__slide">
                     <a class="activity__item" href="#">
-                    <img src="img/home/activity1.png" class="d-block activity__image" alt="...">
-                    <div class="activity__info">
-                        <span class="activity__data">10.11.2020</span>
-                        <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
-                        <p class="activity__text">Актуализация проблемы доверия
-                            к российской онкологии: врачам
-                            и их профессионализму, оснащённости
-                        </p>
-                        <span class="content-button">подробнее</span>
-                    </div>
+                        <div class="activity__picture">
+                            <img src="img/home/activity1.png" class="d-block activity__image" alt="...">
+                        </div>
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <span class="content-button">подробнее</span>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide activity__slide">
                     <a class="activity__item" href="#">
-                    <img src="img/home/activity4.png" class="d-block activity__image" alt="...">
-                    <div class="activity__info">
-                        <span class="activity__data">10.11.2020</span>
-                        <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
-                        <p class="activity__text">Актуализация проблемы доверия
-                            к российской онкологии: врачам
-                            и их профессионализму, оснащённости
-                        </p>
-                        <span class="content-button" >подробнее</span>
-                    </div>
+                        <div class="activity__picture">
+                            <img src="img/home/activity4.png" class="d-block activity__image" alt="...">
+                        </div>
+                        <div class="activity__info">
+                            <span class="activity__data">10.11.2020</span>
+                            <h3 class="activity__subtitle">ТОРАКО-АБДОМИНАЛЬНАЯ ОНКОЛОГИЯ</h3>
+                            <p class="activity__text">Актуализация проблемы доверия
+                                к российской онкологии: врачам
+                                и их профессионализму, оснащённости
+                            </p>
+                            <span class="content-button">подробнее</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -335,6 +386,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide news__slide">
+                    <a class="news__item" href="#">
                     <div class="news__picture">
                         <img src="img/home/news1.png" class="d-block news__image" alt="...">
                     </div>
@@ -345,10 +397,12 @@
                             к российской онкологии: врачам
                             и их профессионализму, оснащённости
                         </p>
-                        <a class="content-button" href="#">подробнее</a>
+                        <span class="content-button">подробнее</span>
                     </div>
+                    </a>
                 </div>
                 <div class="swiper-slide news__slide">
+                    <a class="news__item" href="#">
                     <div class="news__picture">
                         <img src="img/home/news2.png" class="d-block news__image" alt="...">
                     </div>
@@ -359,10 +413,12 @@
                             к российской онкологии: врачам
                             и их профессионализму, оснащённости
                         </p>
-                        <a class="content-button" href="#">подробнее</a>
+                        <span class="content-button" >подробнее</span>
                     </div>
+                    </a>
                 </div>
                 <div class="swiper-slide news__slide">
+                    <a class="news__item" href="#">
                     <div class="news__picture">
                         <img src="img/home/news3.png" class="d-block news__image" alt="...">
                     </div>
@@ -372,10 +428,12 @@
                         <p class="activity__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
                             мешает сосредоточиться
                         </p>
-                        <a class="content-button" href="#">подробнее</a>
+                        <span class="content-button">подробнее</span>
                     </div>
+                    </a>
                 </div>
                 <div class="swiper-slide news__slide">
+                    <a class="news__item" href="#">
                     <div class="news__picture">
                         <img src="img/home/news4.png" class="d-block news__image" alt="...">
                     </div>
@@ -385,10 +443,12 @@
                         <p class="activity__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
                             мешает сосредоточиться на смсысловой составляющей...
                         </p>
-                        <a class="content-button" href="#">подробнее</a>
+                        <span class="content-button" >подробнее</span>
                     </div>
+                    </a>
                 </div>
                 <div class="swiper-slide news__slide">
+                    <a class="news__item" href="#">
                     <div class="news__picture">
                         <img src="img/home/news1.png" class="d-block news__image" alt="...">
                     </div>
@@ -399,10 +459,12 @@
                             к российской онкологии: врачам
                             и их профессионализму, оснащённости
                         </p>
-                        <a class="content-button" href="#">подробнее</a>
+                        <span class="content-button">подробнее</span>
                     </div>
+                    </a>
                 </div>
                 <div class="swiper-slide news__slide">
+                    <a class="news__item" href="#">
                     <div class="news__picture">
                         <img src="img/home/news3.png" class="d-block news__image" alt="...">
                     </div>
@@ -413,8 +475,9 @@
                             к российской онкологии: врачам
                             и их профессионализму, оснащённости
                         </p>
-                        <a class="content-button" href="#">подробнее</a>
+                        <span class="content-button">подробнее</span>
                     </div>
+                    </a>
                 </div>
             </div>
 
@@ -443,7 +506,7 @@
                     <a class="content-link risk__link" href="#">Онкоскрининг</a>
                 </li>
             </ul>
-            <img src="img/home/risk.png" alt="diseases" class="col-md-8">
+            <img src="img/home/risk.png" alt="diseases" class="col-md-8 risk__image">
         </div>
     </div>
     <span class="content-name risk__name">не заболеть</span>
@@ -453,7 +516,7 @@
         <p class="content-number"><span class="content-number-active">05</span>/08</p>
         <h2 class="content-title diagnosis__title">Диагноз – рак. Как жить дальше?</h2>
         <div class="diagnosis__content content-row justify-content-between">
-            <img src="img/home/diagnosis.png" alt="diagnosis" class="col-xl-8">
+            <img src="img/home/diagnosis.png" alt="diagnosis" class="col-md-8 diagnosis__image">
             <div class="diagnosis__block">
                 <ul class="risk__list">
                     <li class="risk__item">
@@ -492,7 +555,7 @@
                     <a class="content-link risk__link" href="#">Перечень ЖНВЛП</a>
                 </li>
             </ul>
-            <img src="img/home/therapy.png" alt="therapy" class="col-xl-8">
+            <img src="img/home/therapy.png" alt="therapy" class="col-md-8 therapy__image">
         </div>
     </div>
     <span class="content-name therapy__name">Лечение</span>
@@ -857,10 +920,419 @@
                         <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
                     </div>
                 </div>
-
-
             </div>
-            <ul class="nav nav-tabs partners__gallery col-md-6 d-flex flex-row justify-content-between align-items-center"
+            <div class="tab-content partners__info partners__info--inner" id="myTabContent2">
+                <div class="tab-pane fade  show active" id="aor2" role="tabpanel" aria-labelledby="aor-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">АОР</h4>
+                        <p class="partners__text">Служба «Ясное утро» с 2007 года обеспечивает работу горячей линии
+                            помощи
+                            онкобольным 8-800-100-0191. Анонимно, круглосуточно и бесплатно мы принимаем звонки со всей
+                            России. Ежемесячно к нам поступает около 4000 обращений. Позвонив на линию, пациент может
+                            получить консультацию опытного психолога, юриста по медицинскому праву, а также прояснить
+                            информационные вопросы, связанные с прохождением лечения. Сейчас Служба «Ясное утро» - это
+                            не
+                            только горячая линия помощи онкологическим больным, но и программа очных консультаций для
+                            пациентов, курсы повышения квалификации для психологов, программы для специалистов,
+                            работающих с
+                            онкологическими пациентами, десятки изданных материалов для пациентов.</p>
+                        <a class="content-link partners__link" href="https://yasnoeutro.ru/"
+                           target="_blank">yasnoeutro.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nanolek2" role="tabpanel" aria-labelledby="nanolek-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">НАНОЛЕК</h4>
+                        <p class="partners__text">НАНОЛЕК — это современная быстроразвивающаяся российская
+                            биофармацевтическая компания с собственным высокотехнологичным производством полного цикла
+                            по стандартам GMP и ISO, которая специализируется на выпуске импортозамещающих и
+                            инновационных лекарственных препаратов, как собственной разработки, так и созданных с
+                            привлечением международных партнеров, с фокусом на профилактику и терапию социально значимых
+                            заболеваний.
+
+                            На сегодняшний день компания является одним из лидеров в области производства педиатрических
+                            вакцин в РФ. Диверсифицированный продуктовый портфель препаратов НАНОЛЕК представлен в
+                            следующих терапевтических направлениях: вакцины, препараты для лечения ВИЧ, онкологических
+                            заболеваний и пр.</p>
+                        <a class="content-link partners__link" href="https://www.nanolek.ru/"
+                           target="_blank">nanolek.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="lilly2" role="tabpanel" aria-labelledby="lilly-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">Лилли</h4>
+                        <p class="partners__text">Компания Лилли — международная инновационная фармацевтическая
+                            компания, основанная в 1876 г.
+
+                            На протяжении более чем 140 лет компания Лилли успешно разрабатывает эффективные методы
+                            помощи пациентам в области эндокринологии, онкологии, психиатрии, инфекционных заболеваний,
+                            неврологии, кардиологии и урологии.
+
+                            Компания развивает партнёрские отношения с крупнейшими научными организациями по всему миру,
+                            что позволяет ей находить ответы на наиболее острые вопросы здравоохранения и удовлетворять
+                            самые неотложные медицинские нужды людей.</p>
+                        <a class="content-link partners__link" href="https://www.lilly.ru/"
+                           target="_blank">lilly.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="johnsons2" role="tabpanel" aria-labelledby="johnsons-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">Janssen</h4>
+                        <p class="partners__text">Компания Janssen основана в 1953 г. выдающимся ученым, доктором Полом
+                            Янссеном, который принимал участие в разработке 80 лекарственных препаратов в области
+                            обезболивания, психиатрии, инфекционных заболеваний и гастроэнтерологии, 4 из которых до сих
+                            пор находятся в списке основных лекарственных средств ВОЗ. В 1961 г. компания Janssen вошла
+                            в состав Johnson & Johnson – крупнейшего разработчика и производителя продуктов в области
+                            здравоохранения. С момента основания было разработано около 180 фармацевтических субстанций,
+                            многие из которых стали прорывом в своих терапевтических областях.</p>
+                        <a class="content-link partners__link" href="https://www.janssen.com/ru"
+                           target="_blank">janssen.com</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="astra2" role="tabpanel" aria-labelledby="astra-tab">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">АстраЗенека</h4>
+                        <p class="partners__text">«АстраЗенека» является международной, научно-ориентированной
+                            биофармацевтической компанией, нацеленной на исследование, разработку и вывод на рынок
+                            рецептурных препаратов преимущественно в таких терапевтических областях как онкология,
+                            кардиология, нефрология, нарушения обмена веществ и респираторные заболевания. Компания
+                            «АстраЗенека» представлена более чем в 100 странах мира, а ее инновационные препараты
+                            используют миллионы пациентов во всем мире.</p>
+                        <a class="content-link partners__link" href="https://www.astrazeneca.ru/"
+                           target="_blank">astrazeneca.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="novartis2" role="tabpanel" aria-labelledby="novartis-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">Новартис</h4>
+                        <p class="partners__text">«Новартис» – международная фармацевтическая компания со штаб-квартирой
+                            в городе Базель, Швейцария. «Новартис» работает, переосмысливая подход к медицине ради
+                            улучшения качества и продолжительности жизни людей. Являясь ведущей международной
+                            фармацевтической компанией, мы применяем новейшие научные достижения и цифровые технологии
+                            при создании инновационных препаратов для решения самых острых медико-социальных
+                            проблем.</p>
+                        <a class="content-link partners__link" href="https://www.novartis.ru/"
+                           target="_blank">novartis.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="biocad2" role="tabpanel" aria-labelledby="biocad-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">BIOCAD</h4>
+                        <p class="partners__text">BIOCAD – одна из крупнейших биотехнологических международных
+                            инновационных компаний в России, объединившая научно-исследовательские центры мирового
+                            уровня, современное фармацевтическое и биотехнологическое производство, доклинические и
+                            клинические исследования, соответствующие международным стандартам.</p>
+                        <a class="content-link partners__link" href="https://biocad.ru/"
+                           target="_blank">biocad.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="farm2" role="tabpanel" aria-labelledby="farm-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">Р-Фарм</h4>
+                        <p class="partners__text">Группа компаний «Р-Фарм» – один из лидеров российского
+                            фармацевтического рынка. Основана в 2001 году А.Е. Репиком. Штат – более 3000
+                            высококвалифицированных специалистов. Группа компаний работает на всей территории Российской
+                            Федерации, в странах СНГ, США, Германии, Японии и других. Действует более 70 филиалов и
+                            представительств. «Р-Фарм» специализируется на исследованиях и разработке, производстве
+                            высокотехнологичных лекарственных средств, а также поставках лабораторного оборудования и
+                            медицинской техники.</p>
+                        <a class="content-link partners__link" href="http://www.r-pharm.com/ru/"
+                           target="_blank">r-pharm.com</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="bayer2" role="tabpanel" aria-labelledby="bayer-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">Bayer</h4>
+                        <p class="partners__text">Bayer – международный концерн с экспертизой в области естественных
+                            наук: здравоохранения и сельского хозяйства. Продукты и решения компании направлены на
+                            улучшение качества жизни людей. Коммерческая деятельность концерна построена на основе
+                            внедрения инноваций, экономического роста и высокой доходности.</p>
+                        <a class="content-link partners__link" href="https://www.bayer.ru/ru/"
+                           target="_blank">www.bayer.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="cotekc2" role="tabpanel" aria-labelledby="cotekc-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">Сотекс</h4>
+                        <p class="partners__text">«ФармФирма «Сотекс» – современный производитель лекарственных средств.
+                            Завод «Сотекса», располагающийся в Сергиево-Посадском районе Московской области, изначально
+                            спроектирован и функционирует в соответствии с требованиями GMP и является одним из наиболее
+                            высокотехнологичных и инновационных фармацевтических предприятий в России.</p>
+                        <a class="content-link partners__link" href="http://www.sotex.ru/"
+                           target="_blank">sotex.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="msd2" role="tabpanel" aria-labelledby="msd-tab2">
+                    <div class="partners__block">
+                        <h4 class="partners__subtitle">MSD</h4>
+                        <p class="partners__text">На протяжении более 125 лет MSD является одной из ведущих
+                            международных компаний в области здравоохранения. MSD – это фирменное наименование компании
+                            Merck & Co. Inc., штаб-квартира которой находится в Кенилворте, штат Нью-Джерси, США. Мы
+                            создаем, разрабатываем и производим инновационные рецептурные лекарственные препараты,
+                            включая биологические лекарственные средства и вакцины, которые помогают сохранять и
+                            улучшать здоровье людей.</p>
+                        <a class="content-link partners__link" href="https://www.msd.ru/home/"
+                           target="_blank">msd.ru</a>
+                    </div>
+                    <h4 class="partners__subtitle">Проекты партнера</h4>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class=" partners__wrap d-flex flex-row justify-content-between align-items-center">
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class="content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                    <div class="partners__inner d-flex flex-row justify-content-between align-items-center">
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                        <a class=" content-link partners__link" href="#">ssilkanaproekt.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container partners__slider ">
+                <!-- Additional required wrapper -->
+                <ul class="swiper-wrapper nav nav-tabs partners__wrapper" id="myTab2" role="tablist">
+                    <!-- Slides -->
+                    <li class="swiper-slide nav-item partners__slide" role="presentation">
+                        <a class="nav-link active  partners__tabs" id="aor-tab2" data-toggle="tab" href="#aor2" role="tab" aria-controls="aor2" aria-selected="true">
+                            <img src="img/home/morning-logo.jpg" class="partners__image"></a></li>
+                    <li class="swiper-slide  nav-item  partners__slide" role="presentation">
+                        <a class="nav-link partners__tabs"  id="nanolek-tab2" data-toggle="tab" href="#nanolek2" role="tab" aria-controls="nanolek2" aria-selected="false">
+                            <img src="img/home/nanolek-logo.svg" class="partners__image"></a></li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="lilly-tab2" data-toggle="tab" href="#lilly2" role="tab"
+                           aria-controls="lilly2" aria-selected="false"><img src="img/home/lilly-logo.png"
+                                                                            class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="johnsons-tab2" data-toggle="tab" href="#johnsons2" role="tab" aria-controls="johnsons2" aria-selected="false">
+                            <img src="img/home/johnsons-logo.png" class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="astra-tab2" data-toggle="tab" href="#astra2" role="tab"
+                           aria-controls="astra2" aria-selected="false"><img src="img/home/astra-logo.png"
+                                                                            class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="novartis-tab2" data-toggle="tab" href="#novartis2" role="tab"
+                           aria-controls="novartis2" aria-selected="false"><img src="img/home/novartis-logo.png"
+                                                                               class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="biocad-tab2" data-toggle="tab" href="#biocad2" role="tab"
+                           aria-controls="biocad2" aria-selected="false"><img src="img/home/biocad-logo.png"
+                                                                             class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="farm-tab2" data-toggle="tab" href="#farm2" role="tab"
+                           aria-controls="farm2" aria-selected="false"><img src="img/home/farm-logo.png"
+                                                                           class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="bayer-tab2" data-toggle="tab" href="#bayer2" role="tab"
+                           aria-controls="bayer2" aria-selected="false"><img src="img/home/bayer-logo.png"
+                                                                            class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs"  id="cotekc-tab2" data-toggle="tab" href="#cotekc2" role="tab"
+                           aria-controls="cotekc2" aria-selected="false"><img src="img/home/cotekc-logo.png"
+                                                                             class="partners__image"></a>
+                    </li>
+                    <li class="swiper-slide   nav-item  partners__slide" role="presentation">
+                        <a class="nav-link  partners__tabs" id="msd-tab2" data-toggle="tab" href="#msd2" role="tab"
+                           aria-controls="msd2" aria-selected="false"><img src="img/home/msd-logo.png"
+                                                                          class="partners__image"></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav nav-tabs partners__gallery col-md-6 content-row justify-content-between align-items-center"
                 id="myTab" role="tablist">
                 <li class="nav-item partners__item" role="presentation">
                     <a class="nav-link active  partners__tabs" id="aor-tab" data-toggle="tab" href="#aor" role="tab"

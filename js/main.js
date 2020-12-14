@@ -1,3 +1,14 @@
+$(".header__menu--open").click(function (e) {
+    e.preventDefault(),
+        $(".header__menu-mobile").toggleClass("header__menu-mobile--visible")
+})
+
+var swiper = new Swiper('.partners__slider', {
+    slidesPerView: "auto",
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    loop: false,
+});
 var swiper = new Swiper('.diseases__slider', {
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -7,14 +18,20 @@ var swiper = new Swiper('.diseases__slider', {
 });
 var swiper = new Swiper('.activity__slider', {
     slidesPerView: 4,
-    //spaceBetween: 21,
+    spaceBetween: 21,
     slidesPerGroup: 1,
     loop: true,
-    zoom: 5,
     nextButton: '.activity__next',
     prevButton: '.activity__prev',
     breakpoints: {
-        480: {
+        1200: {
+            slidesPerView: 3,
+        },
+
+        990: {
+            slidesPerView: 2,
+        },
+        576: {
             slidesPerView: "auto",
         }
     }
@@ -27,7 +44,14 @@ var swiper2 = new Swiper('.news__slider', {
     nextButton: '.news__next',
     prevButton: '.news__prev',
     breakpoints: {
-        480: {
+        1200: {
+            slidesPerView: 3,
+        },
+
+        990: {
+            slidesPerView: 2,
+        },
+        576: {
             slidesPerView: "auto",
         }
     }
