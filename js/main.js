@@ -1,20 +1,54 @@
 $(".header__menu--open").click(function (e) {
-    e.preventDefault(),
-        $(".header__menu-mobile").toggleClass("header__menu-mobile--visible")
-})
-
+    e.preventDefault();
+    $(".header__menu-mobile").toggleClass("header__menu-mobile--visible")
+});
+$('.header__section--item ').click(function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 100);
+    return false;
+});
+// $('.partners__slide').scroll(function (){
+//     if ($(this).hasClass("swiper-slide-active")){
+//       $('.tab-pane').addClass('active')  ;
+//     }
+//     console.log(1)
+// })
 var swiper = new Swiper('.partners__slider', {
     slidesPerView: "auto",
     slidesPerGroup: 1,
     spaceBetween: 30,
     loop: false,
 });
+swiper.on('onSlideChangeStart', function () {
+    var link = $('.partners__wrapper .swiper-slide-next .partners__tabs').attr('href');
+    var description = $('.partners__info--inner .tab-pane').attr('id');
+    for (let i = 0; i < $('.partners__info--inner').length; i++) { // выведет 0, затем 1, затем 2
+        console.log(i);
+        if (link == ('#' + description)) {
+            var item = link.slice(1);
+            $("#"+item).addClass("active show");
+
+        }
+    }
+
+});
+// swiper.on('slideChange', function () {
+//     console.log(3);
+//     // var element = $('.partners__wrapper .partners__tabs').attr('href');
+//     // console.log(2);
+//     // var info = $('.partners__info--inner .tab-pane').attr('id');
+//     // if (element == ('#' + info)) {
+//     //     $('.tab-pane').addClass("active");
+//     // }
+// });
+
 var swiper = new Swiper('.diseases__slider', {
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 30,
     loop: true,
-    autoplay: 5000,
+    autoplay: 7000,
 });
 var swiper = new Swiper('.activity__slider', {
     slidesPerView: 4,

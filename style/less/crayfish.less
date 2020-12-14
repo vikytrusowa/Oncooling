@@ -1,0 +1,298 @@
+.header.header__crayfish{
+  padding-bottom: 10px;
+}
+.crayfish {
+  padding: 0 0 100px;
+  margin-bottom: 88px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #7B8196;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 36px;
+
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #373D4F;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #373D4F;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      color: #F4A93D;
+      &:after {
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid #F4A93D;
+        bottom: -10px;
+        left: 0;
+        width: 44px;
+        z-index: 99;
+        border-radius: 1.5px;
+      }
+    }
+    &--active{
+      &:after {
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid #F4A93D;
+        bottom: -10px;
+        left: 0;
+        width: 44px;
+        z-index: 99;
+        border-radius: 1.5px;
+      }
+    }
+  }
+
+  &__list {
+    padding: 16px 0 0;
+    margin: 0;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 26px;
+
+    &:after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      border-bottom: 1px solid #D2D6E1;
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #A8A8A8;
+    margin-bottom: 20px;
+  }
+
+  &__navigation {
+    width: 17%;
+    min-height: 445px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -20%;
+      top: 0;
+      border-right: 1px solid #7B8196;
+      height: 509px;
+    }
+  }
+
+  &__content {
+    width: 76%;
+  }
+
+  &__image {
+    width: 61%;
+  }
+
+  &__info {
+    width: 35%;
+  }
+
+  &__advertising {
+    position: absolute;
+    background: url(../../img/disease/banner.png) no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 200px;
+    padding: 17px;
+    box-sizing: border-box;
+    bottom: 39px;
+
+    &--name {
+      font-size: 35px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    &--text {
+      font-size: 115.5px;
+      line-height: 115px;
+      margin: 0;
+    }
+  }
+}
+
+.basement {
+  &__title {
+    margin-bottom: 40px;
+
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+
+}
+
+.basement .basement__wrap {
+  width: 80%
+}
+
+.basement .footer__info {
+  width: 32%;
+}
+
+.basement .footer__social--link {
+  margin-bottom: 0;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .crayfish .crayfish__content {
+    flex-direction: column-reverse;
+  }
+
+  .crayfish__info {
+    width: 100%;
+  }
+
+  .crayfish__image {
+    margin-bottom: 40px;
+  }
+  .crayfish__navigation {
+    width: 19%;
+  }
+  .crayfish__content {
+    width: 74%;
+  }
+}
+@media screen and (max-width: 990px){
+  .crayfish__navigation {
+    width: 24%;
+  }
+  .crayfish__content {
+    width: 68%;
+  }
+  .basement .footer__info {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .crayfish {
+    padding: 0;
+    &:after{
+      display: none;
+    }
+  }
+  .crayfish__navigation {
+    min-height: auto;
+  }
+  .crayfish .crayfish__wrap {
+    flex-direction: column;
+  }
+
+  .crayfish__navigation {
+    margin-bottom: 47px;
+    width: 100%;
+  }
+
+  .crayfish__navigation:after {
+    display: none;
+  }
+
+  .crayfish__content {
+    width: 100%;
+  }
+
+  .crayfish__image {
+    width: 100%;
+  }
+
+  .crayfish__advertising {
+    position: static;
+    width: 64%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../../img/disease/banner-mobile.png") no-repeat;
+    background-size: cover;
+  }
+  .basement .footer__content {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  .basement .basement__wrap {
+    width: 100%;
+  }
+  .basement .footer__info {
+    width: 60%;
+  }
+  .basement{
+    position: relative;
+    margin-top: 120px;
+  }
+  .basement .basement__title{
+    position: absolute;
+    top: -70px;
+    left: 5%;
+  }
+  .basement .footer__line{
+    position: static;
+  }
+}
+@media screen and (max-width: 568px){
+  .crayfish__advertising {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px){
+  .crayfish__advertising--text {
+    font-size: 83.5px;
+  }
+  .crayfish__advertising--name {
+    font-size: 28px;
+  }
+  .basement .footer__info {
+    width: 100%;
+  }
+}

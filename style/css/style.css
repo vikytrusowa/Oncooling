@@ -1,3 +1,264 @@
+.header.header__crayfish {
+  padding-bottom: 10px;
+}
+.crayfish {
+  padding: 0 0 100px;
+  margin-bottom: 88px;
+  position: relative;
+}
+.crayfish:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px solid #7B8196;
+  width: 100%;
+}
+.crayfish__title {
+  margin-bottom: 36px;
+}
+.crayfish__title:after,
+.crayfish__title:before {
+  display: none;
+}
+.crayfish__subtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #373D4F;
+  margin-bottom: 20px;
+}
+.crayfish__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #373D4F;
+  text-decoration: none;
+  position: relative;
+}
+.crayfish__link:hover {
+  color: #F4A93D;
+}
+.crayfish__link:hover:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #F4A93D;
+  bottom: -10px;
+  left: 0;
+  width: 44px;
+  z-index: 99;
+  border-radius: 1.5px;
+}
+.crayfish__link--active:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #F4A93D;
+  bottom: -10px;
+  left: 0;
+  width: 44px;
+  z-index: 99;
+  border-radius: 1.5px;
+}
+.crayfish__list {
+  padding: 16px 0 0;
+  margin: 0;
+}
+.crayfish__item {
+  position: relative;
+  margin-bottom: 26px;
+}
+.crayfish__item:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  border-bottom: 1px solid #D2D6E1;
+  opacity: 0.5;
+}
+.crayfish__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  color: #A8A8A8;
+  margin-bottom: 20px;
+}
+.crayfish__navigation {
+  width: 17%;
+  min-height: 445px;
+  position: relative;
+}
+.crayfish__navigation:after {
+  content: "";
+  position: absolute;
+  right: -20%;
+  top: 0;
+  border-right: 1px solid #7B8196;
+  height: 509px;
+}
+.crayfish__content {
+  width: 76%;
+}
+.crayfish__image {
+  width: 61%;
+}
+.crayfish__info {
+  width: 35%;
+}
+.crayfish__advertising {
+  position: absolute;
+  background: url(../../img/disease/banner.png) no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 200px;
+  padding: 17px;
+  box-sizing: border-box;
+  bottom: 39px;
+}
+.crayfish__advertising--name {
+  font-size: 35px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.crayfish__advertising--text {
+  font-size: 115.5px;
+  line-height: 115px;
+  margin: 0;
+}
+.basement__title {
+  margin-bottom: 40px;
+}
+.basement__title:after,
+.basement__title:before {
+  display: none;
+}
+.basement .basement__wrap {
+  width: 80%;
+}
+.basement .footer__info {
+  width: 32%;
+}
+.basement .footer__social--link {
+  margin-bottom: 0;
+}
+.basement .footer__social--link:not(:last-child) {
+  margin-right: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .crayfish .crayfish__content {
+    flex-direction: column-reverse;
+  }
+  .crayfish__info {
+    width: 100%;
+  }
+  .crayfish__image {
+    margin-bottom: 40px;
+  }
+  .crayfish__navigation {
+    width: 19%;
+  }
+  .crayfish__content {
+    width: 74%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .crayfish__navigation {
+    width: 24%;
+  }
+  .crayfish__content {
+    width: 68%;
+  }
+  .basement .footer__info {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .crayfish {
+    padding: 0;
+  }
+  .crayfish:after {
+    display: none;
+  }
+  .crayfish__navigation {
+    min-height: auto;
+  }
+  .crayfish .crayfish__wrap {
+    flex-direction: column;
+  }
+  .crayfish__navigation {
+    margin-bottom: 47px;
+    width: 100%;
+  }
+  .crayfish__navigation:after {
+    display: none;
+  }
+  .crayfish__content {
+    width: 100%;
+  }
+  .crayfish__image {
+    width: 100%;
+  }
+  .crayfish__advertising {
+    position: static;
+    width: 64%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../../img/disease/banner-mobile.png") no-repeat;
+    background-size: cover;
+  }
+  .basement .footer__content {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  .basement .basement__wrap {
+    width: 100%;
+  }
+  .basement .footer__info {
+    width: 60%;
+  }
+  .basement {
+    position: relative;
+    margin-top: 120px;
+  }
+  .basement .basement__title {
+    position: absolute;
+    top: -70px;
+    left: 5%;
+  }
+  .basement .footer__line {
+    position: static;
+  }
+}
+@media screen and (max-width: 568px) {
+  .crayfish__advertising {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .crayfish__advertising--text {
+    font-size: 83.5px;
+  }
+  .crayfish__advertising--name {
+    font-size: 28px;
+  }
+  .basement .footer__info {
+    width: 100%;
+  }
+}
 @font-face {
   font-family: 'Bebas Neue';
   src: url('../../fonts/BebasNeueBold.eot');
@@ -330,7 +591,7 @@
   height: 126px;
   max-width: 135px;
   position: relative;
-  transition: 0.4s linear;
+  transition: 0.1s linear;
 }
 .header__section--item:after {
   content: "";
@@ -342,11 +603,11 @@
   height: 100%;
   width: 100%;
   border: 1px solid #373D4F;
-  transition: 0.4s linear;
+  transition: 0.1s linear;
 }
 .header__section--item:hover {
   z-index: 999;
-  transition: 0.3s linear;
+  transition: 0.1s linear;
 }
 .header__section--name {
   font-family: "Bebas Neue";
@@ -409,11 +670,13 @@
   border-radius: 1.5px;
   border-bottom: 3px solid #F4A93D;
 }
+.header__section--item:hover {
+  transform: scale(1.2, 1.1);
+}
 .header__section--item:hover:after {
   top: -2px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.2, 1.1);
-  transition: 0.4s linear;
+  transition: 0.1s linear;
 }
 .diseases {
   position: relative;
@@ -444,6 +707,9 @@
 }
 .diseases__image {
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-height: 433px;
 }
 .activity {
   margin-bottom: 111px;
@@ -459,10 +725,10 @@
   margin-bottom: 107px;
 }
 .activity__slider {
-  height: 440px;
+  height: 490px;
   width: 90.1%;
   margin: 0 auto;
-  padding: 45px 21px 0;
+  padding: 50px 21px 0;
   box-sizing: border-box;
 }
 .activity__slide {
@@ -487,10 +753,7 @@
 }
 .activity__image {
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
 }
 .activity__info {
   padding: 15px 15px 34px;
@@ -547,8 +810,9 @@
   height: 37px;
   background: url("../../img/home/arrow.svg") no-repeat;
 }
-.activity .activity__slider .swiper-slide-prev {
-  opacity: 0;
+.activity .activity__slider .activity__item:hover {
+  transform: scale(1.18);
+  transition: 0.2s linear;
 }
 .activity .activity__slider .activity__item:hover:after {
   content: "";
@@ -558,18 +822,11 @@
   bottom: 0;
   z-index: -1;
   position: absolute;
-  left: -22px;
-  right: -22px;
-  top: -32px;
-  box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
-  transition: 0.1s linear;
-}
-.activity .activity__slider .activity__item:hover .activity__image {
-  height: 162px;
-  top: -32px;
-  left: -22px;
-  right: -22px;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: 0.2s linear;
+  box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 }
 .activity .activity__slider .activity__item:hover .content-button {
   color: #F4A93D;
@@ -583,10 +840,10 @@
   bottom: -130px;
 }
 .news__slider {
-  height: 440px;
+  height: 490px;
   width: 90.1%;
   margin: 0 auto;
-  padding: 45px 21px 0;
+  padding: 50px 21px 0;
   box-sizing: border-box;
 }
 .news__slide {
@@ -603,6 +860,7 @@
   margin: 0 auto;
   position: relative;
   border: 1px solid transparent;
+  transition: 0.1s linear;
 }
 .news__picture {
   position: relative;
@@ -611,10 +869,7 @@
 }
 .news__image {
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
 }
 .news__prev {
   left: 0;
@@ -633,8 +888,9 @@
   height: 37px;
   background: url("../../img/home/arrow.svg") no-repeat;
 }
-.news .news__slider .swiper-slide-prev {
-  opacity: 0;
+.news .news__slider .news__item:hover {
+  transform: scale(1.18);
+  transition: 0.2s linear;
 }
 .news .news__slider .news__item:hover:after {
   content: "";
@@ -644,18 +900,11 @@
   bottom: 0;
   z-index: -1;
   position: absolute;
-  left: -22px;
-  right: -22px;
-  top: -32px;
-  transition: 0.1s linear;
-  box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
-}
-.news .news__slider .news__item:hover .news__image {
-  height: 162px;
-  top: -32px;
-  left: -22px;
-  right: -22px;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: 0.2s linear;
+  box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 }
 .news .news__slider .news__item:hover .content-button {
   color: #F4A93D;
@@ -977,6 +1226,13 @@
   .header__search {
     display: none;
   }
+  .header__section--item:hover {
+    transform: scale(1);
+  }
+  .news .news__slider .news__item:hover,
+  .activity .activity__slider .activity__item:hover {
+    transform: scale(1);
+  }
   .content-name {
     right: 5%;
     font-size: 200px;
@@ -990,6 +1246,7 @@
   }
   .header__section--item {
     height: 115px;
+    margin: 0;
   }
   .header__menu {
     width: 62.8%;
@@ -1251,8 +1508,7 @@
     display: none;
   }
   .header__section--item {
-    padding: 10px;
-    height: 100px;
+    width: 32%;
   }
   .header__image--mob {
     display: block;
@@ -1351,5 +1607,15 @@
   }
   .footer__info {
     width: 100%;
+  }
+  .header__section--link {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header__section--item {
+    padding: 10px;
+    height: 100px;
+    width: 31%;
   }
 }

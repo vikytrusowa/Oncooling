@@ -1,3 +1,5 @@
+@import "crayfish";
+
 @font-face {
   font-family: 'Bebas Neue';
   src: url('../../fonts/BebasNeueBold.eot');
@@ -377,7 +379,7 @@
       height: 126px;
       max-width: 135px;
       position: relative;
-      transition: .4s linear;
+      transition: .1s linear;
 
       &:after {
         content: "";
@@ -389,12 +391,12 @@
         height: 100%;
         width: 100%;
         border: 1px solid #373D4F;
-        transition: .4s linear;
+        transition: .1s linear;
       }
 
       &:hover {
         z-index: 999;
-        transition: .3s linear;
+        transition: .1s linear;
       }
     }
 
@@ -474,12 +476,14 @@
   border-bottom: 3px solid #F4A93D;
 
 }
-
+.header__section--item:hover{
+  transform: scale(1.2, 1.1);
+}
 .header__section--item:hover:after {
   top: -2px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.2, 1.1);
-  transition: .4s linear;
+  //transform: scale(1.2, 1.1);
+  transition: .1s linear;
 }
 
 .diseases {
@@ -518,6 +522,9 @@
 
   &__image {
     max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-height: 433px;
   }
 }
 
@@ -538,10 +545,10 @@
   }
 
   &__slider {
-    height: 440px;
+    height: 490px;
     width: 90.1%;
     margin: 0 auto;
-    padding: 45px 21px 0;
+    padding: 50px 21px 0;
     box-sizing: border-box;
   }
 
@@ -571,10 +578,7 @@
 
   &__image {
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
   }
 
   &__info {
@@ -641,10 +645,12 @@
 
 }
 
-.activity .activity__slider .swiper-slide-prev {
-  opacity: 0;
-}
 
+
+.activity .activity__slider .activity__item:hover {
+  transform: scale(1.18);
+  transition: .2s linear;
+}
 .activity .activity__slider .activity__item:hover:after {
   content: "";
   background: #FFFFFF;
@@ -653,20 +659,15 @@
   bottom: 0;
   z-index: -1;
   position: absolute;
-  left: -22px;
-  right: -22px;
-  top: -32px;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: .2s linear;
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
-  transition: .1s linear;
+
 }
 
-.activity .activity__slider .activity__item:hover .activity__image {
-  height: 162px;
-  top: -32px;
-  left: -22px;
-  right: -22px;
-  transition: .2s linear;
-}
+
 
 .activity .activity__slider .activity__item:hover .content-button {
   color: #F4A93D;
@@ -683,10 +684,10 @@
   }
 
   &__slider {
-    height: 440px;
+    height: 490px;
     width: 90.1%;
     margin: 0 auto;
-    padding: 45px 21px 0;
+    padding: 50px 21px 0;
     box-sizing: border-box;
   }
 
@@ -707,6 +708,7 @@
     margin: 0 auto;
     position: relative;
     border: 1px solid transparent;
+    transition: .1s linear;
   }
 
   &__picture {
@@ -717,10 +719,7 @@
 
   &__image {
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
   }
 
   &__prev {
@@ -744,8 +743,11 @@
   }
 }
 
-.news .news__slider .swiper-slide-prev {
-  opacity: 0;
+
+
+.news .news__slider .news__item:hover {
+  transform: scale(1.18);
+  transition: .2s linear;
 }
 
 .news .news__slider .news__item:hover:after {
@@ -756,20 +758,13 @@
   bottom: 0;
   z-index: -1;
   position: absolute;
-  left: -22px;
-  right: -22px;
-  top: -32px;
-  transition: .1s linear;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: .2s linear;
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 }
 
-.news .news__slider .news__item:hover .news__image {
-  height: 162px;
-  top: -32px;
-  left: -22px;
-  right: -22px;
-  transition: .2s linear;
-}
 
 .news .news__slider .news__item:hover .content-button {
   color: #F4A93D;
@@ -1163,7 +1158,13 @@
   .header__search {
     display: none;
   }
-
+  .header__section--item:hover {
+    transform: scale(1);
+  }
+  .news .news__slider .news__item:hover,
+  .activity .activity__slider .activity__item:hover {
+    transform: scale(1);
+  }
   .content-name {
     right: 5%;
     font-size: 200px;
@@ -1181,6 +1182,7 @@
 
   .header__section--item {
     height: 115px;
+    margin: 0;
   }
 
   .header__menu {
@@ -1442,6 +1444,7 @@
     padding-bottom: 95px;
     position: relative;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1512,8 +1515,7 @@
   }
 
   .header__section--item {
-    padding: 10px;
-    height: 100px;
+    width: 32%;
   }
 
   .header__image--mob {
@@ -1639,5 +1641,15 @@
 
   .footer__info {
     width: 100%;
+  }
+  .header__section--link {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px){
+  .header__section--item {
+    padding: 10px;
+    height: 100px;
+    width: 31%;
   }
 }
