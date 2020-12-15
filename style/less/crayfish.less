@@ -276,13 +276,26 @@
     top: -70px;
     left: 5%;
   }
-  .basement .footer__line{
+  .basement .basement__info{
     position: static;
   }
 }
 @media screen and (max-width: 568px){
   .crayfish__advertising {
     width: 100%;
+  }
+  .crayfish__link{
+    color: #F4A93D;
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 3px solid #F4A93D;
+      bottom: -10px;
+      left: 0;
+      width: 44px;
+      z-index: 99;
+      border-radius: 1.5px;
+    }
   }
 }
 @media screen and (max-width: 460px){

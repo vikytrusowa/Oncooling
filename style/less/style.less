@@ -122,6 +122,7 @@
       border-color: #F4A93D;
     }
   }
+
 }
 
 .content-name {
@@ -476,9 +477,11 @@
   border-bottom: 3px solid #F4A93D;
 
 }
-.header__section--item:hover{
+
+.header__section--item:hover {
   transform: scale(1.2, 1.1);
 }
+
 .header__section--item:hover:after {
   top: -2px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -646,11 +649,11 @@
 }
 
 
-
 .activity .activity__slider .activity__item:hover {
   transform: scale(1.18);
   transition: .2s linear;
 }
+
 .activity .activity__slider .activity__item:hover:after {
   content: "";
   background: #FFFFFF;
@@ -666,7 +669,6 @@
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 
 }
-
 
 
 .activity .activity__slider .activity__item:hover .content-button {
@@ -742,7 +744,6 @@
     background: url("../../img/home/arrow.svg") no-repeat;
   }
 }
-
 
 
 .news .news__slider .news__item:hover {
@@ -867,7 +868,7 @@
   }
 
   &__block {
-    margin-bottom: 67px;
+  //  margin-bottom: 67px;
   }
 
   &__wrap {
@@ -926,7 +927,7 @@
     flex-wrap: nowrap;
   }
 
-  &__info--inner {
+  &__description {
     display: none;
   }
 }
@@ -1158,13 +1159,16 @@
   .header__search {
     display: none;
   }
+
   .header__section--item:hover {
     transform: scale(1);
   }
+
   .news .news__slider .news__item:hover,
   .activity .activity__slider .activity__item:hover {
     transform: scale(1);
   }
+
   .content-name {
     right: 5%;
     font-size: 200px;
@@ -1237,8 +1241,12 @@
   }
 
   .partners__info--inner {
-    display: block;
+    display: flex;
+  }
 
+  .partners__description {
+    display: block;
+    width: 100%;
   }
 
   .partners__slide {
@@ -1406,7 +1414,7 @@
   }
 
   .partners__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .partners__gallery {
@@ -1502,6 +1510,13 @@
 
   .risk__content {
     flex-direction: column;
+  }
+  .activity__all {
+    align-self: flex-start;
+    margin-right: 0;
+  }
+  .diseases__image {
+    max-height: 396px;
   }
 }
 
@@ -1613,14 +1628,37 @@
     margin-bottom: 42px;
   }
 
-  .activity__slide {
+  .activity__slide,
+  .news__slide{
     width: 75%;
+  }
+  .partners {
+    padding-bottom: 100px;
+  }
+  .content-exile{
+    color: #F4A93D;
+  }
+  .content-link:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 49px;
+    border-bottom: 2px solid #F4A93D;
+    border-radius: 1.5px;
+
+  }
+  .diseases__image {
+    max-height: 295px;
   }
 }
 
 @media screen and (max-width: 460px) {
   .partners__slide {
-    width: 96%;
+    width: 72%;
+  }
+  .partners__slider .partners__tabs:after {
+    width: 200px;
   }
 
   .header__menu-mobile--visible .header__wrapper {
@@ -1642,11 +1680,16 @@
   .footer__info {
     width: 100%;
   }
+
   .header__section--link {
     font-size: 10px;
   }
+  .diseases__image {
+    max-height: 162px;
+  }
 }
-@media screen and (max-width: 375px){
+
+@media screen and (max-width: 375px) {
   .header__section--item {
     padding: 10px;
     height: 100px;

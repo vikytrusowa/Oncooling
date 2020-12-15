@@ -8,40 +8,23 @@ $('.header__section--item ').click(function (e) {
     $('html, body').animate({scrollTop: $(target).offset().top}, 100);
     return false;
 });
-// $('.partners__slide').scroll(function (){
-//     if ($(this).hasClass("swiper-slide-active")){
-//       $('.tab-pane').addClass('active')  ;
-//     }
-//     console.log(1)
-// })
 var swiper = new Swiper('.partners__slider', {
+    spaceBetween: 10,
     slidesPerView: "auto",
-    slidesPerGroup: 1,
+    loop:true,
+    loopedSlides: 5,
+});
+var galleryBottom = new Swiper('.partners__description', {
     spaceBetween: 30,
-    loop: false,
-});
-swiper.on('onSlideChangeStart', function () {
-    var link = $('.partners__wrapper .swiper-slide-next .partners__tabs').attr('href');
-    var description = $('.partners__info--inner .tab-pane').attr('id');
-    for (let i = 0; i < $('.partners__info--inner').length; i++) { // выведет 0, затем 1, затем 2
-        console.log(i);
-        if (link == ('#' + description)) {
-            var item = link.slice(1);
-            $("#"+item).addClass("active show");
-
-        }
-    }
+    slidesPerView: 1,
+    touchRatio: 0.2,
+    loop:true,
+    loopedSlides: 5, //looped slides should be the same
+    slideToClickedSlide: true
 
 });
-// swiper.on('slideChange', function () {
-//     console.log(3);
-//     // var element = $('.partners__wrapper .partners__tabs').attr('href');
-//     // console.log(2);
-//     // var info = $('.partners__info--inner .tab-pane').attr('id');
-//     // if (element == ('#' + info)) {
-//     //     $('.tab-pane').addClass("active");
-//     // }
-// });
+swiper.params.control = galleryBottom;
+galleryBottom.params.control = swiper;
 
 var swiper = new Swiper('.diseases__slider', {
     slidesPerView: 1,

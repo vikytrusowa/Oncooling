@@ -239,13 +239,26 @@
     top: -70px;
     left: 5%;
   }
-  .basement .footer__line {
+  .basement .basement__info {
     position: static;
   }
 }
 @media screen and (max-width: 568px) {
   .crayfish__advertising {
     width: 100%;
+  }
+  .crayfish__link {
+    color: #F4A93D;
+  }
+  .crayfish__link:after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #F4A93D;
+    bottom: -10px;
+    left: 0;
+    width: 44px;
+    z-index: 99;
+    border-radius: 1.5px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -982,9 +995,6 @@
 .partners__title {
   margin-bottom: 120px;
 }
-.partners__block {
-  margin-bottom: 67px;
-}
 .partners__wrap {
   margin-bottom: 26px;
   width: 75%;
@@ -1032,7 +1042,7 @@
   border: none;
   flex-wrap: nowrap;
 }
-.partners__info--inner {
+.partners__description {
   display: none;
 }
 .partners__gallery .partners__item:hover,
@@ -1289,7 +1299,11 @@
     display: none;
   }
   .partners__info--inner {
+    display: flex;
+  }
+  .partners__description {
     display: block;
+    width: 100%;
   }
   .partners__slide {
     width: 60%;
@@ -1423,7 +1437,7 @@
     flex-direction: column-reverse;
   }
   .partners__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .partners__gallery {
     width: 100%;
@@ -1498,6 +1512,13 @@
   }
   .risk__content {
     flex-direction: column;
+  }
+  .activity__all {
+    align-self: flex-start;
+    margin-right: 0;
+  }
+  .diseases__image {
+    max-height: 396px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1585,13 +1606,35 @@
     flex-direction: column;
     margin-bottom: 42px;
   }
-  .activity__slide {
+  .activity__slide,
+  .news__slide {
     width: 75%;
+  }
+  .partners {
+    padding-bottom: 100px;
+  }
+  .content-exile {
+    color: #F4A93D;
+  }
+  .content-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 49px;
+    border-bottom: 2px solid #F4A93D;
+    border-radius: 1.5px;
+  }
+  .diseases__image {
+    max-height: 295px;
   }
 }
 @media screen and (max-width: 460px) {
   .partners__slide {
-    width: 96%;
+    width: 72%;
+  }
+  .partners__slider .partners__tabs:after {
+    width: 200px;
   }
   .header__menu-mobile--visible .header__wrapper {
     width: 100%;
@@ -1610,6 +1653,9 @@
   }
   .header__section--link {
     font-size: 10px;
+  }
+  .diseases__image {
+    max-height: 162px;
   }
 }
 @media screen and (max-width: 375px) {
