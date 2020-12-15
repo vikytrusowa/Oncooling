@@ -1128,6 +1128,14 @@
   border-radius: 0;
   filter: drop-shadow(0px 0px 25px rgba(44, 10, 0, 0.14));
 }
+.partners__slide.swiper-slide-active .partners__tabs:after {
+  content: "";
+  border: 1px solid #373D4F;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 0;
+  filter: drop-shadow(0px 0px 25px rgba(44, 10, 0, 0.14));
+}
 .partners__gallery .partners__item .active:after {
   content: "";
   border: 1px solid #373D4F;
@@ -1613,7 +1621,8 @@
   .partners {
     padding-bottom: 100px;
   }
-  .content-exile {
+  .content-exile,
+  .partners__link {
     color: #F4A93D;
   }
   .content-link:after {
