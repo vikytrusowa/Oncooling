@@ -1,0 +1,148 @@
+.contacts {
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7B8196;
+    opacity: 0.7;
+    margin-bottom: 94px;
+    width: 59%;
+  }
+
+  &__item {
+    width: 48%;
+    margin-bottom: 37px;
+  }
+
+  &__line {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      width: 87%;
+      border-bottom: 1px solid #8E8E8E;
+      opacity: 0.5;
+    }
+  }
+
+  &__map {
+    width: 44%;
+    display: block;
+    height: 360px;
+  }
+
+  &__wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__block {
+    width: 44%;
+  }
+
+  &__icon {
+    margin-right: 19px;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0;
+
+    &:last-child {
+      display: inline;
+    }
+
+    &:hover {
+      color: #F4A93D;
+    }
+
+  }
+}
+.contacts .crayfish__text{
+  margin-bottom: 0;
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts__block {
+    width: 54%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .contacts .contacts__content {
+    flex-direction: column;
+  }
+
+  .contacts__block {
+    width: 100%;
+  }
+
+  .contacts__item {
+    width: 37%;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts .contacts__wrap {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  .contacts__item {
+    margin-bottom: 43px;
+    width: 50%;
+  }
+
+  .contacts__item:not(:last-child) {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      width: 87%;
+      border-bottom: 1px solid #8E8E8E;
+      opacity: 0.5;
+    }
+  }
+
+  .contacts__text {
+    margin-bottom: 29px;
+    width: 100%;
+  }
+
+  .contacts__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 576px){
+  .contacts__item {
+    width: 62%;
+  }
+}
+@media screen and (max-width: 460px){
+  .contacts__item {
+    width: 90%;
+  }
+}

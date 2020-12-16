@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style/css/style.css?ver=6">
@@ -33,10 +34,11 @@
                     </div>
                     <ul class="nav header__menu header__menu--inner">
                         <li class="nav-item">
-                            <a class="nav-link header__menu--link active" aria-current="page" href="#">Новости</a>
+                            <a class="nav-link header__menu--link active" aria-current="page"
+                               href="news.html">Новости</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="#">Мероприятия</a>
+                            <a class="nav-link header__menu--link" href="events.html">Мероприятия</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header__menu--link" href="#">База знаний</a>
@@ -51,7 +53,7 @@
                             <a class="nav-link header__menu--link" href="#">Виды рака</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="#">Контакты</a>
+                            <a class="nav-link header__menu--link" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -63,10 +65,10 @@
 проект</span></p></a>
             <ul class="nav header__menu">
                 <li class="nav-item">
-                    <a class="nav-link header__menu--link active" aria-current="page" href="#">Новости</a>
+                    <a class="nav-link header__menu--link active" aria-current="page" href="news.html">Новости</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="#">Мероприятия</a>
+                    <a class="nav-link header__menu--link" href="events.html">Мероприятия</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link header__menu--link" href="#">База знаний</a>
@@ -81,7 +83,7 @@
                     <a class="nav-link header__menu--link" href="#">Виды рака</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="#">Контакты</a>
+                    <a class="nav-link header__menu--link" href="contacts.html">Контакты</a>
                 </li>
             </ul>
             <div class="d-flex flex-row justify-content-between align-items-center">
@@ -154,7 +156,8 @@
                 <div class="diseases__block">
                     <h3 class="diseases__subtitle">Диагноз – не приговор. Рак излечим. Узнайте о видах онкологических
                         заболеваний и методах борьбы с ними</h3>
-                    <a href="оncological-diseases.html" class="content-link content-exile">Онкологические заболевания -></a>
+                    <a href="оncological-diseases.html" class="content-link content-exile">Онкологические заболевания
+                        -></a>
                 </div>
             </div>
         </div>
@@ -422,7 +425,8 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev activity__prev"></div>
         <div class="swiper-button-next  activity__next"></div>
-        <a  href="https://oncology-association.ru/events" target="_blank" class="content-link activity__all content-exile">Смотреть все новости -></a>
+        <a href="https://oncology-association.ru/events" target="_blank"
+           class="content-link activity__all content-exile">Смотреть все новости -></a>
     </div>
 </section>
 <section class="news">
@@ -634,7 +638,8 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev news__prev"></div>
         <div class="swiper-button-next  news__next"></div>
-        <a href="https://oncology-association.ru/news" target="_blank" class="content-link activity__all content-exile">Смотреть все новости -></a>
+        <a href="https://oncology-association.ru/news" target="_blank" class="content-link activity__all content-exile">Смотреть
+            все новости -></a>
     </div>
     <span class="content-name news__name">МЕДИА</span>
 </section>
@@ -694,7 +699,8 @@
                     <a class="content-link risk__link content-exile" href="#">Где лечиться</a>
                 </li>
                 <li class="risk__item">
-                    <a class="content-link risk__link content-exile" href="#">Набор пациентов на экспериментальное лечение</a>
+                    <a class="content-link risk__link content-exile" href="#">Набор пациентов на экспериментальное
+                        лечение</a>
                 </li>
                 <li class="risk__item">
                     <a class="content-link risk__link content-exile" href="#">Паллиативная помощь</a>
@@ -908,7 +914,8 @@
                     <a class="nav-link partners__tabs" id="nanolek-tab" data-toggle="tab" href="#nanolek"
                        role="tab"
                        aria-controls="nanolek" aria-selected="false"><img src="img/home/nanolek-logo.svg"
-                                                                          class="partners__image" alt="nanolek-logo"></a>
+                                                                          class="partners__image"
+                                                                          alt="nanolek-logo"></a>
                 </li>
                 <li class="nav-item  partners__item" role="presentation">
                     <a class="nav-link  partners__tabs" id="lilly-tab" data-toggle="tab" href="#lilly" role="tab"
@@ -962,221 +969,248 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper nav nav-tabs partners__wrapper" id="myTab2" role="tablist">
                     <!-- Slides -->
-                    <div class="swiper-slide  partners__slide" >
+                    <div class="swiper-slide  partners__slide">
                         <div class=" partners__tabs">
-                            <img src="img/home/morning-logo.jpg" class="partners__image" alt="morning-logo"></div></div>
-                    <div class="swiper-slide   partners__slide" >
-                        <div class="nav-link partners__tabs" >
-                            <img src="img/home/nanolek-logo.svg" class="partners__image" alt="nanolek-logo"></div></div>
-                    <div class="swiper-slide     partners__slide">
-                        <div class="nav-link  partners__tabs" ><img src="img/home/lilly-logo.png"
-                                                                             class="partners__image" alt="lilly-logo"></div>
+                            <img src="img/home/morning-logo.jpg" class="partners__image" alt="morning-logo"></div>
                     </div>
-                    <div class="swiper-slide    partners__slide" >
-                        <div class="nav-link  partners__tabs" >
+                    <div class="swiper-slide   partners__slide">
+                        <div class="nav-link partners__tabs">
+                            <img src="img/home/nanolek-logo.svg" class="partners__image" alt="nanolek-logo"></div>
+                    </div>
+                    <div class="swiper-slide     partners__slide">
+                        <div class="nav-link  partners__tabs"><img src="img/home/lilly-logo.png"
+                                                                   class="partners__image" alt="lilly-logo"></div>
+                    </div>
+                    <div class="swiper-slide    partners__slide">
+                        <div class="nav-link  partners__tabs">
                             <img src="img/home/johnsons-logo.png" class="partners__image" alt="johnsons-logo"></div>
                     </div>
-                    <div class="swiper-slide   partners__slide" >
-                        <div class="nav-link  partners__tabs" ><img src="img/home/astra-logo.png"
-                                                                             class="partners__image" alt="astra-logo"></div>
+                    <div class="swiper-slide   partners__slide">
+                        <div class="nav-link  partners__tabs"><img src="img/home/astra-logo.png"
+                                                                   class="partners__image" alt="astra-logo"></div>
                     </div>
-                    <div class="swiper-slide     partners__slide" >
-                        <div class="nav-link  partners__tabs" ><img src="img/home/novartis-logo.png"
-                                                                                class="partners__image" alt="novartis-logo"></div>
+                    <div class="swiper-slide     partners__slide">
+                        <div class="nav-link  partners__tabs"><img src="img/home/novartis-logo.png"
+                                                                   class="partners__image" alt="novartis-logo"></div>
                     </div>
-                    <div class="swiper-slide   partners__slide" >
+                    <div class="swiper-slide   partners__slide">
                         <div class="nav-link  partners__tabs"><img src="img/home/biocad-logo.png"
-                                                                              class="partners__image" alt="biocad-logo"></div>
+                                                                   class="partners__image" alt="biocad-logo"></div>
                     </div>
-                    <div class="swiper-slide    partners__slide" >
-                        <div class="nav-link  partners__tabs" ><img src="img/home/farm-logo.png"
-                                                                            class="partners__image" alt="farm-logo"></div>
+                    <div class="swiper-slide    partners__slide">
+                        <div class="nav-link  partners__tabs"><img src="img/home/farm-logo.png"
+                                                                   class="partners__image" alt="farm-logo"></div>
                     </div>
-                    <div class="swiper-slide    partners__slide" >
-                        <div class="nav-link  partners__tabs" ><img src="img/home/bayer-logo.png"
-                                                                             class="partners__image" alt="bayer-logo"></div>
+                    <div class="swiper-slide    partners__slide">
+                        <div class="nav-link  partners__tabs"><img src="img/home/bayer-logo.png"
+                                                                   class="partners__image" alt="bayer-logo"></div>
                     </div>
                     <div class="swiper-slide   partners__slide">
                         <div class="nav-link  partners__tabs"><img src="img/home/cotekc-logo.png"
-                                                                              class="partners__image" alt="cotekc-logo"></div>
+                                                                   class="partners__image" alt="cotekc-logo"></div>
                     </div>
-                    <div class="swiper-slide   partners__slide" >
-                        <div class="nav-link  partners__tabs" ><img src="img/home/msd-logo.png"
-                                                                           class="partners__image" alt="msd-logo"></div>
+                    <div class="swiper-slide   partners__slide">
+                        <div class="nav-link  partners__tabs"><img src="img/home/msd-logo.png"
+                                                                   class="partners__image" alt="msd-logo"></div>
                     </div>
                 </div>
             </div>
             <div class="swiper-container partners__description ">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper"  >
+                <div class="swiper-wrapper">
                     <!-- Slides -->
-                        <div class="swiper-slide ">
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">АОР</h4>
-                                <p class="partners__text">Служба «Ясное утро» с 2007 года обеспечивает работу горячей линии
-                                    помощи
-                                    онкобольным 8-800-100-0191. Анонимно, круглосуточно и бесплатно мы принимаем звонки со всей
-                                    России. Ежемесячно к нам поступает около 4000 обращений. Позвонив на линию, пациент может
-                                    получить консультацию опытного психолога, юриста по медицинскому праву, а также прояснить
-                                    информационные вопросы, связанные с прохождением лечения. Сейчас Служба «Ясное утро» - это
-                                    не
-                                    только горячая линия помощи онкологическим больным, но и программа очных консультаций для
-                                    пациентов, курсы повышения квалификации для психологов, программы для специалистов,
-                                    работающих с
-                                    онкологическими пациентами, десятки изданных материалов для пациентов.</p>
-                                <a class="content-link partners__link" href="https://yasnoeutro.ru/"
-                                   target="_blank">yasnoeutro.ru</a>
-                            </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">АОР</h4>
+                            <p class="partners__text">Служба «Ясное утро» с 2007 года обеспечивает работу горячей линии
+                                помощи
+                                онкобольным 8-800-100-0191. Анонимно, круглосуточно и бесплатно мы принимаем звонки со
+                                всей
+                                России. Ежемесячно к нам поступает около 4000 обращений. Позвонив на линию, пациент
+                                может
+                                получить консультацию опытного психолога, юриста по медицинскому праву, а также
+                                прояснить
+                                информационные вопросы, связанные с прохождением лечения. Сейчас Служба «Ясное утро» -
+                                это
+                                не
+                                только горячая линия помощи онкологическим больным, но и программа очных консультаций
+                                для
+                                пациентов, курсы повышения квалификации для психологов, программы для специалистов,
+                                работающих с
+                                онкологическими пациентами, десятки изданных материалов для пациентов.</p>
+                            <a class="content-link partners__link" href="https://yasnoeutro.ru/"
+                               target="_blank">yasnoeutro.ru</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">НАНОЛЕК</h4>
-                                <p class="partners__text">НАНОЛЕК — это современная быстроразвивающаяся российская
-                                    биофармацевтическая компания с собственным высокотехнологичным производством полного цикла
-                                    по стандартам GMP и ISO, которая специализируется на выпуске импортозамещающих и
-                                    инновационных лекарственных препаратов, как собственной разработки, так и созданных с
-                                    привлечением международных партнеров, с фокусом на профилактику и терапию социально значимых
-                                    заболеваний.
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">НАНОЛЕК</h4>
+                            <p class="partners__text">НАНОЛЕК — это современная быстроразвивающаяся российская
+                                биофармацевтическая компания с собственным высокотехнологичным производством полного
+                                цикла
+                                по стандартам GMP и ISO, которая специализируется на выпуске импортозамещающих и
+                                инновационных лекарственных препаратов, как собственной разработки, так и созданных с
+                                привлечением международных партнеров, с фокусом на профилактику и терапию социально
+                                значимых
+                                заболеваний.
 
-                                    На сегодняшний день компания является одним из лидеров в области производства педиатрических
-                                    вакцин в РФ. Диверсифицированный продуктовый портфель препаратов НАНОЛЕК представлен в
-                                    следующих терапевтических направлениях: вакцины, препараты для лечения ВИЧ, онкологических
-                                    заболеваний и пр.</p>
-                                <a class="content-link partners__link" href="https://www.nanolek.ru/"
-                                   target="_blank">nanolek.ru</a>
-                            </div>
-
+                                На сегодняшний день компания является одним из лидеров в области производства
+                                педиатрических
+                                вакцин в РФ. Диверсифицированный продуктовый портфель препаратов НАНОЛЕК представлен в
+                                следующих терапевтических направлениях: вакцины, препараты для лечения ВИЧ,
+                                онкологических
+                                заболеваний и пр.</p>
+                            <a class="content-link partners__link" href="https://www.nanolek.ru/"
+                               target="_blank">nanolek.ru</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">Лилли</h4>
-                                <p class="partners__text">Компания Лилли — международная инновационная фармацевтическая
-                                    компания, основанная в 1876 г.
 
-                                    На протяжении более чем 140 лет компания Лилли успешно разрабатывает эффективные методы
-                                    помощи пациентам в области эндокринологии, онкологии, психиатрии, инфекционных заболеваний,
-                                    неврологии, кардиологии и урологии.
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">Лилли</h4>
+                            <p class="partners__text">Компания Лилли — международная инновационная фармацевтическая
+                                компания, основанная в 1876 г.
 
-                                    Компания развивает партнёрские отношения с крупнейшими научными организациями по всему миру,
-                                    что позволяет ей находить ответы на наиболее острые вопросы здравоохранения и удовлетворять
-                                    самые неотложные медицинские нужды людей.</p>
-                                <a class="content-link partners__link" href="https://www.lilly.ru/"
-                                   target="_blank">lilly.ru</a>
-                            </div>
+                                На протяжении более чем 140 лет компания Лилли успешно разрабатывает эффективные методы
+                                помощи пациентам в области эндокринологии, онкологии, психиатрии, инфекционных
+                                заболеваний,
+                                неврологии, кардиологии и урологии.
 
+                                Компания развивает партнёрские отношения с крупнейшими научными организациями по всему
+                                миру,
+                                что позволяет ей находить ответы на наиболее острые вопросы здравоохранения и
+                                удовлетворять
+                                самые неотложные медицинские нужды людей.</p>
+                            <a class="content-link partners__link" href="https://www.lilly.ru/"
+                               target="_blank">lilly.ru</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">Janssen</h4>
-                                <p class="partners__text">Компания Janssen основана в 1953 г. выдающимся ученым, доктором Полом
-                                    Янссеном, который принимал участие в разработке 80 лекарственных препаратов в области
-                                    обезболивания, психиатрии, инфекционных заболеваний и гастроэнтерологии, 4 из которых до сих
-                                    пор находятся в списке основных лекарственных средств ВОЗ. В 1961 г. компания Janssen вошла
-                                    в состав Johnson & Johnson – крупнейшего разработчика и производителя продуктов в области
-                                    здравоохранения. С момента основания было разработано около 180 фармацевтических субстанций,
-                                    многие из которых стали прорывом в своих терапевтических областях.</p>
-                                <a class="content-link partners__link" href="https://www.janssen.com/ru"
-                                   target="_blank">janssen.com</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">Janssen</h4>
+                            <p class="partners__text">Компания Janssen основана в 1953 г. выдающимся ученым, доктором
+                                Полом
+                                Янссеном, который принимал участие в разработке 80 лекарственных препаратов в области
+                                обезболивания, психиатрии, инфекционных заболеваний и гастроэнтерологии, 4 из которых до
+                                сих
+                                пор находятся в списке основных лекарственных средств ВОЗ. В 1961 г. компания Janssen
+                                вошла
+                                в состав Johnson & Johnson – крупнейшего разработчика и производителя продуктов в
+                                области
+                                здравоохранения. С момента основания было разработано около 180 фармацевтических
+                                субстанций,
+                                многие из которых стали прорывом в своих терапевтических областях.</p>
+                            <a class="content-link partners__link" href="https://www.janssen.com/ru"
+                               target="_blank">janssen.com</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">АстраЗенека</h4>
-                                <p class="partners__text">«АстраЗенека» является международной, научно-ориентированной
-                                    биофармацевтической компанией, нацеленной на исследование, разработку и вывод на рынок
-                                    рецептурных препаратов преимущественно в таких терапевтических областях как онкология,
-                                    кардиология, нефрология, нарушения обмена веществ и респираторные заболевания. Компания
-                                    «АстраЗенека» представлена более чем в 100 странах мира, а ее инновационные препараты
-                                    используют миллионы пациентов во всем мире.</p>
-                                <a class="content-link partners__link" href="https://www.astrazeneca.ru/"
-                                   target="_blank">astrazeneca.ru</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">АстраЗенека</h4>
+                            <p class="partners__text">«АстраЗенека» является международной, научно-ориентированной
+                                биофармацевтической компанией, нацеленной на исследование, разработку и вывод на рынок
+                                рецептурных препаратов преимущественно в таких терапевтических областях как онкология,
+                                кардиология, нефрология, нарушения обмена веществ и респираторные заболевания. Компания
+                                «АстраЗенека» представлена более чем в 100 странах мира, а ее инновационные препараты
+                                используют миллионы пациентов во всем мире.</p>
+                            <a class="content-link partners__link" href="https://www.astrazeneca.ru/"
+                               target="_blank">astrazeneca.ru</a>
                         </div>
-                        <div class="swiper-slide ">
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">Новартис</h4>
-                                <p class="partners__text">«Новартис» – международная фармацевтическая компания со штаб-квартирой
-                                    в городе Базель, Швейцария. «Новартис» работает, переосмысливая подход к медицине ради
-                                    улучшения качества и продолжительности жизни людей. Являясь ведущей международной
-                                    фармацевтической компанией, мы применяем новейшие научные достижения и цифровые технологии
-                                    при создании инновационных препаратов для решения самых острых медико-социальных
-                                    проблем.</p>
-                                <a class="content-link partners__link" href="https://www.novartis.ru/"
-                                   target="_blank">novartis.ru</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">Новартис</h4>
+                            <p class="partners__text">«Новартис» – международная фармацевтическая компания со
+                                штаб-квартирой
+                                в городе Базель, Швейцария. «Новартис» работает, переосмысливая подход к медицине ради
+                                улучшения качества и продолжительности жизни людей. Являясь ведущей международной
+                                фармацевтической компанией, мы применяем новейшие научные достижения и цифровые
+                                технологии
+                                при создании инновационных препаратов для решения самых острых медико-социальных
+                                проблем.</p>
+                            <a class="content-link partners__link" href="https://www.novartis.ru/"
+                               target="_blank">novartis.ru</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">BIOCAD</h4>
-                                <p class="partners__text">BIOCAD – одна из крупнейших биотехнологических международных
-                                    инновационных компаний в России, объединившая научно-исследовательские центры мирового
-                                    уровня, современное фармацевтическое и биотехнологическое производство, доклинические и
-                                    клинические исследования, соответствующие международным стандартам.</p>
-                                <a class="content-link partners__link" href="https://biocad.ru/"
-                                   target="_blank">biocad.ru</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">BIOCAD</h4>
+                            <p class="partners__text">BIOCAD – одна из крупнейших биотехнологических международных
+                                инновационных компаний в России, объединившая научно-исследовательские центры мирового
+                                уровня, современное фармацевтическое и биотехнологическое производство, доклинические и
+                                клинические исследования, соответствующие международным стандартам.</p>
+                            <a class="content-link partners__link" href="https://biocad.ru/"
+                               target="_blank">biocad.ru</a>
                         </div>
-                        <div class="swiper-slide ">
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">Р-Фарм</h4>
-                                <p class="partners__text">Группа компаний «Р-Фарм» – один из лидеров российского
-                                    фармацевтического рынка. Основана в 2001 году А.Е. Репиком. Штат – более 3000
-                                    высококвалифицированных специалистов. Группа компаний работает на всей территории Российской
-                                    Федерации, в странах СНГ, США, Германии, Японии и других. Действует более 70 филиалов и
-                                    представительств. «Р-Фарм» специализируется на исследованиях и разработке, производстве
-                                    высокотехнологичных лекарственных средств, а также поставках лабораторного оборудования и
-                                    медицинской техники.</p>
-                                <a class="content-link partners__link" href="http://www.r-pharm.com/ru/"
-                                   target="_blank">r-pharm.com</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">Р-Фарм</h4>
+                            <p class="partners__text">Группа компаний «Р-Фарм» – один из лидеров российского
+                                фармацевтического рынка. Основана в 2001 году А.Е. Репиком. Штат – более 3000
+                                высококвалифицированных специалистов. Группа компаний работает на всей территории
+                                Российской
+                                Федерации, в странах СНГ, США, Германии, Японии и других. Действует более 70 филиалов и
+                                представительств. «Р-Фарм» специализируется на исследованиях и разработке, производстве
+                                высокотехнологичных лекарственных средств, а также поставках лабораторного оборудования
+                                и
+                                медицинской техники.</p>
+                            <a class="content-link partners__link" href="http://www.r-pharm.com/ru/"
+                               target="_blank">r-pharm.com</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">Bayer</h4>
-                                <p class="partners__text">Bayer – международный концерн с экспертизой в области естественных
-                                    наук: здравоохранения и сельского хозяйства. Продукты и решения компании направлены на
-                                    улучшение качества жизни людей. Коммерческая деятельность концерна построена на основе
-                                    внедрения инноваций, экономического роста и высокой доходности.</p>
-                                <a class="content-link partners__link" href="https://www.bayer.ru/ru/"
-                                   target="_blank">www.bayer.ru</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">Bayer</h4>
+                            <p class="partners__text">Bayer – международный концерн с экспертизой в области естественных
+                                наук: здравоохранения и сельского хозяйства. Продукты и решения компании направлены на
+                                улучшение качества жизни людей. Коммерческая деятельность концерна построена на основе
+                                внедрения инноваций, экономического роста и высокой доходности.</p>
+                            <a class="content-link partners__link" href="https://www.bayer.ru/ru/"
+                               target="_blank">www.bayer.ru</a>
                         </div>
-                        <div class="swiper-slide " >
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">Сотекс</h4>
-                                <p class="partners__text">«ФармФирма «Сотекс» – современный производитель лекарственных средств.
-                                    Завод «Сотекса», располагающийся в Сергиево-Посадском районе Московской области, изначально
-                                    спроектирован и функционирует в соответствии с требованиями GMP и является одним из наиболее
-                                    высокотехнологичных и инновационных фармацевтических предприятий в России.</p>
-                                <a class="content-link partners__link" href="http://www.sotex.ru/"
-                                   target="_blank">sotex.ru</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">Сотекс</h4>
+                            <p class="partners__text">«ФармФирма «Сотекс» – современный производитель лекарственных
+                                средств.
+                                Завод «Сотекса», располагающийся в Сергиево-Посадском районе Московской области,
+                                изначально
+                                спроектирован и функционирует в соответствии с требованиями GMP и является одним из
+                                наиболее
+                                высокотехнологичных и инновационных фармацевтических предприятий в России.</p>
+                            <a class="content-link partners__link" href="http://www.sotex.ru/"
+                               target="_blank">sotex.ru</a>
                         </div>
-                        <div class="swiper-slide ">
-                            <div class="partners__block">
-                                <h4 class="partners__subtitle">MSD</h4>
-                                <p class="partners__text">На протяжении более 125 лет MSD является одной из ведущих
-                                    международных компаний в области здравоохранения. MSD – это фирменное наименование компании
-                                    Merck & Co. Inc., штаб-квартира которой находится в Кенилворте, штат Нью-Джерси, США. Мы
-                                    создаем, разрабатываем и производим инновационные рецептурные лекарственные препараты,
-                                    включая биологические лекарственные средства и вакцины, которые помогают сохранять и
-                                    улучшать здоровье людей.</p>
-                                <a class="content-link partners__link" href="https://www.msd.ru/home/"
-                                   target="_blank">msd.ru</a>
-                            </div>
 
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="partners__block">
+                            <h4 class="partners__subtitle">MSD</h4>
+                            <p class="partners__text">На протяжении более 125 лет MSD является одной из ведущих
+                                международных компаний в области здравоохранения. MSD – это фирменное наименование
+                                компании
+                                Merck & Co. Inc., штаб-квартира которой находится в Кенилворте, штат Нью-Джерси, США. Мы
+                                создаем, разрабатываем и производим инновационные рецептурные лекарственные препараты,
+                                включая биологические лекарственные средства и вакцины, которые помогают сохранять и
+                                улучшать здоровье людей.</p>
+                            <a class="content-link partners__link" href="https://www.msd.ru/home/"
+                               target="_blank">msd.ru</a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <span class="content-name partners__name">ПАРТНЕРЫ</span>
 </section>
@@ -1192,7 +1226,7 @@
             </div>
             <div class="content-row footer__wrap">
                 <div class="footer__partners footer__line">
-                    <a class="footer__logo d-flex flex-row justify-content-between align-items-center" href="#"><img
+                    <a class="footer__logo d-flex flex-row justify-content-between align-items-center" href="index.html"><img
                             src="img/home/logo.svg" class="header__logo--icon" alt="logo">
                         <p class="header__logo--text"><span class="header__logo--name">ОНКОПРОСВЕЩЕНИЕ</span>
                             <span class="header__logo--info">Национальный проект</span></p></a>
@@ -1201,14 +1235,14 @@
                 <div class="footer__menu  footer__line d-flex flex-row justify-content-between align-items-start">
                     <ul class="nav footer__list d-flex flex-column justify-content-between align-items-start">
                         <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="#">Главная
+                            <a class="nav-link footer__link" href="index.html">Главная
                             </a>
                         </li>
                         <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="#">Новости</a>
+                            <a class="nav-link footer__link" href="news.html">Новости</a>
                         </li>
                         <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="#">Мероприятия</a>
+                            <a class="nav-link footer__link" href="events.html">Мероприятия</a>
                         </li>
                         <li class="nav-item footer__item">
                             <a class="nav-link  footer__link" href="#">База знаний</a>
@@ -1226,14 +1260,14 @@
                             <a class="nav-link footer__link" href="#">Виды рака</a>
                         </li>
                         <li class="nav-item footer__item">
-                            <a class="nav-link  footer__link" href="#">Контакты</a>
+                            <a class="nav-link  footer__link" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </div>
                 <ul class="footer__info">
                     <li class="footer__info--item d-flex flex-row  align-items-center"><img
                             src="img/home/phone.svg" alt="phone" class="footer__icon"><a class="footer__info--link"
-                                                                                         href="#">+7
+                                                                                         href="tel:+74959884725">+7
                         (495) 988-47-25</a></li>
                     <li class="footer__info--item d-flex flex-row  align-items-center"><img
                             src="img/home/marker.svg" alt="marker" class="footer__icon">123290,
@@ -1242,8 +1276,8 @@
                     <li class="footer__info--item d-flex flex-row align-items-center">
                         <img src="img/home/email.svg" alt="email" class="footer__icon">
                         <div>
-                            <a class="footer__info--link" href="#">info@oncology-association.ru</a><br>
-                            <a class="footer__info--link" href="#">contact@nmicr.ru </a><span>(контакт для СМИ)</span>
+                            <a class="footer__info--link"  href="mailto:info@oncology-association.ru">info@oncology-association.ru</a><br>
+                            <a class="footer__info--link"  href="mailto:contact@nmicr.ru">contact@nmicr.ru </a><span>(контакт для СМИ)</span>
                         </div>
                     </li>
                 </ul>
@@ -1259,6 +1293,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
         integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=&amp;lang=ru_RU"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

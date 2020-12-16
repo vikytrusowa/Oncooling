@@ -59,6 +59,7 @@
       }
     }
     &--active{
+      color: #F4A93D;
       &:after {
         content: "";
         position: absolute;
@@ -96,8 +97,8 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
     color: #A8A8A8;
     margin-bottom: 20px;
   }
@@ -123,11 +124,9 @@
 
   &__image {
     width: 61%;
+    margin: 0 0 40px 40px;
   }
 
-  &__info {
-    width: 35%;
-  }
 
   &__advertising {
     position: absolute;
@@ -187,17 +186,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .crayfish .crayfish__content {
-    flex-direction: column-reverse;
-  }
 
-  .crayfish__info {
-    width: 100%;
-  }
 
-  .crayfish__image {
-    margin-bottom: 40px;
-  }
   .crayfish__navigation {
     width: 19%;
   }
@@ -214,6 +204,9 @@
   }
   .basement .footer__info {
     width: 47%;
+  }
+  .crayfish__image {
+    margin: 0 0 20px 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -245,6 +238,7 @@
 
   .crayfish__image {
     width: 100%;
+    margin: 0 0 40px 0;
   }
 
   .crayfish__advertising {
@@ -286,16 +280,16 @@
   }
   .crayfish__link{
     color: #F4A93D;
-    &:after {
-      content: "";
-      position: absolute;
-      border-bottom: 3px solid #F4A93D;
-      bottom: -10px;
-      left: 0;
-      width: 44px;
-      z-index: 99;
-      border-radius: 1.5px;
-    }
+    //&:after {
+    //  content: "";
+    //  position: absolute;
+    //  border-bottom: 3px solid #F4A93D;
+    //  bottom: -10px;
+    //  left: 0;
+    //  width: 44px;
+    //  z-index: 99;
+    //  border-radius: 1.5px;
+    //}
   }
 }
 @media screen and (max-width: 460px){

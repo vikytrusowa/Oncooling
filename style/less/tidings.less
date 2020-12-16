@@ -1,0 +1,138 @@
+.tidings {
+  &__title {
+    margin-bottom: 66px;
+  }
+
+  &__item {
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 0;
+      height: 100%;
+      z-index: -1;
+      width: calc(100% - 140px);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: calc(100% - 180px);
+      border-bottom: 1px solid #7B8196;
+    }
+  }
+
+  &__info {
+    width: 81%;
+    padding: 18px 0 26px;
+  }
+
+  &__image {
+    width: 180px;
+    height: 130px;
+    display: block;
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.tidings .activity__data {
+  margin-bottom: 20px;
+}
+
+.tidings .tidings__title:after, .tidings .tidings__title:before {
+  display: none;
+}
+
+.tidings .tidings__data--hidden {
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.tidings__item:hover .tidings__data--hidden {
+  opacity: 1;
+  transition: 0.2s linear;
+}
+
+.tidings__item:hover .tidings__data {
+opacity: 0;
+}
+
+.tidings__item:hover:after {
+  background: #F4F6FA;
+  transition: 0.2s linear;
+}
+
+.tidings .activity__subtitle {
+  margin-bottom: 0;
+  min-height: auto;
+}
+
+
+.tidings .activity__text {
+  min-height: auto;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .tidings__info {
+    width: 75%;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  .tidings__info {
+    width: 68%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .tidings .tidings__item {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+
+  .tidings__info {
+    width: 100%;
+  }
+
+  .tidings__item:before {
+    display: none;
+  }
+
+  .tidings__item:hover .tidings__data--hidden {
+    visibility: hidden;
+  }
+
+  .tidings__item:hover .tidings__data {
+    visibility: visible;
+  }
+
+  .tidings__image {
+    width: 50%;
+    height: auto;
+  }
+
+  .tidings__item:after {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tidings__image {
+    width: 100%;
+  }
+}

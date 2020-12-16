@@ -1,5 +1,8 @@
 @import "crayfish";
-
+@import "tidings";
+@import "events";
+@import "contacts";
+@import "institutions";
 @font-face {
   font-family: 'Bebas Neue';
   src: url('../../fonts/BebasNeueBold.eot');
@@ -234,6 +237,29 @@
         }
       }
     }
+
+    &--active {
+      text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+      color: #373D4F;
+
+      &::before {
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        border-bottom: 1px solid transparent;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid #F4A93D;
+        bottom: -29px;
+        left: -14px;
+        right: -14px;
+        z-index: 99;
+        border-radius: 1.5px;
+      }
+    }
   }
 
   &__search {
@@ -380,7 +406,7 @@
       height: 126px;
       max-width: 135px;
       position: relative;
-      transition: .1s linear;
+      transition: .3s linear;
 
       &:after {
         content: "";
@@ -392,12 +418,12 @@
         height: 100%;
         width: 100%;
         border: 1px solid #373D4F;
-        transition: .1s linear;
+        transition: .3s linear;
       }
 
       &:hover {
         z-index: 999;
-        transition: .1s linear;
+        transition: .3s linear;
       }
     }
 
@@ -483,10 +509,9 @@
 }
 
 .header__section--item:hover:after {
-  top: -2px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   //transform: scale(1.2, 1.1);
-  transition: .1s linear;
+  transition: .3s linear;
 }
 
 .diseases {
@@ -571,6 +596,10 @@
     margin: 0 auto;
     position: relative;
     border: 1px solid transparent;
+    transition: .2s linear;
+    &:after{
+      transition: .2s linear;
+    }
   }
 
   &__picture {
@@ -710,7 +739,10 @@
     margin: 0 auto;
     position: relative;
     border: 1px solid transparent;
-    transition: .1s linear;
+    transition: .2s linear;
+    &:after{
+      transition: .2s linear;
+    }
   }
 
   &__picture {
@@ -868,7 +900,7 @@
   }
 
   &__block {
-  //  margin-bottom: 67px;
+    //  margin-bottom: 67px;
   }
 
   &__wrap {
@@ -1026,6 +1058,7 @@
   border-radius: 0;
   filter: drop-shadow(0px 0px 25px rgba(44, 10, 0, 0.14));
 }
+
 .partners__slide.swiper-slide-active .partners__tabs:after {
   content: "";
   border: 1px solid #373D4F;
@@ -1034,6 +1067,7 @@
   border-radius: 0;
   filter: drop-shadow(0px 0px 25px rgba(44, 10, 0, 0.14));
 }
+
 .partners__gallery .partners__item .active:after {
   content: "";
   border: 1px solid #373D4F;
@@ -1459,7 +1493,12 @@
     padding-bottom: 95px;
     position: relative;
   }
-
+  .header__section--item:first-child:after {
+   border-right: none;
+  }
+  .header__section--item:last-child:after {
+    border-left: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1518,10 +1557,12 @@
   .risk__content {
     flex-direction: column;
   }
+
   .activity__all {
     align-self: flex-start;
     margin-right: 0;
   }
+
   .diseases__image {
     max-height: 396px;
   }
@@ -1539,7 +1580,10 @@
   .header__section--item {
     width: 32%;
   }
-
+  .header__section--item:hover:after {
+    top: 0;
+    box-shadow: none;
+  }
   .header__image--mob {
     display: block;
     width: 100%;
@@ -1636,26 +1680,30 @@
   }
 
   .activity__slide,
-  .news__slide{
+  .news__slide {
     width: 75%;
   }
+
   .partners {
     padding-bottom: 100px;
   }
+
   .content-exile,
-  .partners__link{
+  .partners__link {
     color: #F4A93D;
   }
-  .content-link:after{
+
+  .content-link:after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: 0;
     width: 49px;
     border-bottom: 2px solid #F4A93D;
     border-radius: 1.5px;
 
   }
+
   .diseases__image {
     max-height: 295px;
   }
@@ -1665,6 +1713,7 @@
   .partners__slide {
     width: 72%;
   }
+
   .partners__slider .partners__tabs:after {
     width: 200px;
   }
@@ -1692,6 +1741,7 @@
   .header__section--link {
     font-size: 10px;
   }
+
   .diseases__image {
     max-height: 162px;
   }
