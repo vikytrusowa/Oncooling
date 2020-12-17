@@ -1,6 +1,7 @@
-.header.header__crayfish{
+.header.header__crayfish {
   padding-bottom: 10px;
 }
+
 .crayfish {
   padding: 0 0 100px;
   margin-bottom: 88px;
@@ -47,6 +48,7 @@
 
     &:hover {
       color: #F4A93D;
+
       &:after {
         content: "";
         position: absolute;
@@ -58,8 +60,10 @@
         border-radius: 1.5px;
       }
     }
-    &--active{
+
+    &--active {
       color: #F4A93D;
+
       &:after {
         content: "";
         position: absolute;
@@ -105,7 +109,6 @@
 
   &__navigation {
     width: 17%;
-    min-height: 445px;
     position: relative;
 
     &:after {
@@ -114,7 +117,8 @@
       right: -20%;
       top: 0;
       border-right: 1px solid #7B8196;
-      height: 509px;
+      min-height: 509px;
+      height: 100%;
     }
   }
 
@@ -140,7 +144,19 @@
     width: 200px;
     padding: 17px;
     box-sizing: border-box;
-    bottom: 39px;
+    top: calc(100% + 30px);
+
+    &--inner {
+      display: none;
+      background-size: cover;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue';
+      font-style: normal;
+      font-weight: bold;
+      color: #FFFFFF;
+      padding: 17px;
+      box-sizing: border-box;
+    }
 
     &--name {
       font-size: 35px;
@@ -154,6 +170,16 @@
       line-height: 115px;
       margin: 0;
     }
+  }
+
+  &__block {
+    list-style: disc;
+    padding: 0;
+    list-style-position: inside;
+  }
+
+  &__wrap {
+    position: relative;
   }
 }
 
@@ -184,6 +210,11 @@
     margin-right: 8px;
   }
 }
+.useful{
+  .useful__navigation:after{
+    min-height: 330px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -191,34 +222,43 @@
   .crayfish__navigation {
     width: 19%;
   }
+
   .crayfish__content {
     width: 74%;
   }
 }
-@media screen and (max-width: 990px){
+
+@media screen and (max-width: 990px) {
   .crayfish__navigation {
     width: 24%;
   }
+
   .crayfish__content {
     width: 68%;
   }
+
   .basement .footer__info {
     width: 47%;
   }
+
   .crayfish__image {
     margin: 0 0 20px 20px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .crayfish {
     padding: 0;
-    &:after{
+
+    &:after {
       display: none;
     }
   }
+
   .crayfish__navigation {
     min-height: auto;
   }
+
   .crayfish .crayfish__wrap {
     flex-direction: column;
   }
@@ -242,7 +282,10 @@
   }
 
   .crayfish__advertising {
-    position: static;
+    display: none;
+  }
+
+  .crayfish__advertising--inner {
     width: 64%;
     display: flex;
     flex-direction: row;
@@ -251,34 +294,42 @@
     background: url("../../img/disease/banner-mobile.png") no-repeat;
     background-size: cover;
   }
+
   .basement .footer__content {
     flex-direction: column;
     flex-flow: column-reverse;
   }
+
   .basement .basement__wrap {
     width: 100%;
   }
+
   .basement .footer__info {
     width: 60%;
   }
-  .basement{
+
+  .basement {
     position: relative;
     margin-top: 120px;
   }
-  .basement .basement__title{
+
+  .basement .basement__title {
     position: absolute;
     top: -70px;
     left: 5%;
   }
-  .basement .basement__info{
+
+  .basement .basement__info {
     position: static;
   }
 }
-@media screen and (max-width: 568px){
-  .crayfish__advertising {
+
+@media screen and (max-width: 568px) {
+  .crayfish__advertising--inner {
     width: 100%;
   }
-  .crayfish__link{
+
+  .crayfish__link {
     color: #F4A93D;
     //&:after {
     //  content: "";
@@ -292,13 +343,16 @@
     //}
   }
 }
-@media screen and (max-width: 460px){
+
+@media screen and (max-width: 460px) {
   .crayfish__advertising--text {
     font-size: 83.5px;
   }
+
   .crayfish__advertising--name {
     font-size: 28px;
   }
+
   .basement .footer__info {
     width: 100%;
   }

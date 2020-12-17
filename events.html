@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+          rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style/css/style.css?ver=5">
@@ -33,25 +34,19 @@
                     </div>
                     <ul class="nav header__menu header__menu--inner">
                         <li class="nav-item">
-                            <a class="nav-link header__menu--link active" aria-current="page" href="news.html">Новости</a>
+                            <a class="nav-link header__menu--link active" aria-current="page"
+                               href="news.html">Новости</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header__menu--link" href="events.html">Мероприятия</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="#">База знаний</a>
+                            <a class="nav-link header__menu--link" href="оncological-diseases.html">Онкологические
+                                заболевания</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="#">Помощь пациентам</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="#">Реабилитация</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="#">Виды рака</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header__menu--link" href="contacts.html">Контакты</a>
+                            <a class="nav-link header__menu--link" href="useful-contacts.html">Полезные
+                                контактыКонтакты</a>
                         </li>
                     </ul>
                 </div>
@@ -69,19 +64,11 @@
                     <a class="nav-link header__menu--link header__menu--active" href="events.html">Мероприятия</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="#">База знаний</a>
+                    <a class="nav-link header__menu--link" href="оncological-diseases.html">Онкологические
+                        заболевания</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="#">Помощь пациентам</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="#">Реабилитация</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="#">Виды рака</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header__menu--link" href="contacts.html">Контакты</a>
+                    <a class="nav-link header__menu--link" href="useful-contacts.html">Полезные контакты</a>
                 </li>
             </ul>
             <div class="d-flex flex-row justify-content-between align-items-center">
@@ -100,13 +87,83 @@
         </div>
     </div>
 </header>
-<section class="crayfish">
+<section class="crayfish events">
     <div class="content-container">
-        <h2 class="content-title tidings__title">мероприятия</h2>
-        <div>
-            <div id="datepicker" data-date="16/12/2020"></div>
-            <input type="hidden" id="my_hidden_input">
+        <h2 class="content-title  crayfish__title tidings__title">мероприятия</h2>
+        <div class="crayfish__wrap content-row align-items-start justify-content-between">
+            <div class="crayfish__navigation">
+                <div id="datepicker" class="events__datepicker" data-date="17/12/2020"></div>
+                <input type="hidden" id="my_hidden_input">
+            </div>
+            <div class=" crayfish__content">
+                <div class="content-row  justify-content-between events__item">
+                    <span class="institutions__number">01</span>
+                    <div class="content-row  align-items-start justify-content-between events__block" >
+                        <span class="events__data">04.11.2020</span>
+                        <div class="events__info">
+                            <h3 class="activity__subtitle">Вебинар</h3>
+                            <p class="activity__text">Всероссийский курс молодого онколога. ТОРАКО-АБДОМИНАЛЬНАЯ
+                                ОНКОЛОГИЯ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row  justify-content-between events__item">
+                    <span class="institutions__number">02</span>
+                    <div class="content-row  align-items-start justify-content-between events__block" >
+                        <span class="events__data">04.11.2020</span>
+                        <div class="events__info">
+                            <h3 class="activity__subtitle">Вебинар</h3>
+                            <p class="activity__text">Всероссийский курс молодого онколога. ТОРАКО-АБДОМИНАЛЬНАЯ
+                                ОНКОЛОГИЯ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row  justify-content-between events__item">
+                    <span class="institutions__number">03</span>
+                    <div class="content-row  align-items-start justify-content-between events__block" >
+                        <span class="events__data">06.11.2020 - 07.11.2020</span>
+                        <div class="events__info">
+                            <h3 class="activity__subtitle">Съезд</h3>
+                            <p class="activity__text">Съезд онкологов Юга г. Ростов-на-Дону</p>
+                            <p class="activity__text events__author">(Феденко А. А.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row  justify-content-between events__item">
+                    <span class="institutions__number">04</span>
+                    <div class="content-row  align-items-start justify-content-between events__block" >
+                        <span class="events__data">19.11.2020</span>
+                        <div class="events__info">
+                            <h3 class="activity__subtitle">Форум</h3>
+                            <p class="activity__text">ТРЕТИЙ МЕЖДУНАРОДНЫЙ ФОРУМ ОНКОЛОГИИ И РАДИОЛОГИИ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row  justify-content-between events__item">
+                    <span class="institutions__number">05</span>
+                    <div class="content-row  align-items-start justify-content-between events__block" >
+                        <span class="events__data">19.11.2020</span>
+                        <div class="events__info">
+                            <h3 class="activity__subtitle">Вебинар</h3>
+                            <p class="activity__text">Инновации Амджен в гематологии</p>
+                            <p class="activity__text events__author">(Менделеева Л. П., Соловьев М. В., Крысанов И. С.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row  justify-content-between events__item">
+                    <span class="institutions__number">06</span>
+                    <div class="content-row  align-items-start justify-content-between events__block" >
+                        <span class="events__data">19.11.2020</span>
+                        <div class="events__info">
+                            <h3 class="activity__subtitle">Вебинар</h3>
+                            <p class="activity__text">Мутация гена PIK3CA – фактор неблагоприятного прогноза при HR+ HER2- мРМЖ.
+                                Разбор клинических случаев</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </section>
 
@@ -117,26 +174,23 @@
             <div class="footer__line basement__info">
                 <h2 class="content-title basement__title">Контакты</h2>
                 <div class="footer__social content-row justify-content-center">
-                    <a href="#" class="footer__social--link"><img src="img/home/facebook.svg"></a>
-                    <a href="#" class="footer__social--link"><img src="img/home/instagram.svg"></a>
-                    <a href="#" class="footer__social--link"><img src="img/home/vkontakte.svg"></a>
+                    <a href="#" class="footer__social--link"><img src="img/home/facebook.svg" alt="facebook"></a>
+                    <a href="#" class="footer__social--link"><img src="img/home/instagram.svg" alt="instagram"></a>
+                    <a href="#" class="footer__social--link"><img src="img/home/vkontakte.svg" alt="vkontakte"></a>
                 </div>
             </div>
 
             <div class="content-row basement__wrap footer__wrap">
                 <div class="footer__partners footer__line">
-                    <a class="footer__logo d-flex flex-row justify-content-between align-items-center" href="#"><img
+                    <a class="footer__logo d-flex flex-row justify-content-between align-items-center"
+                       href="index.html"><img
                             src="img/home/logo.svg" class="header__logo--icon" alt="logo">
                         <p class="header__logo--text"><span class="header__logo--name">ОНКОПРОСВЕЩЕНИЕ</span>
                             <span class="header__logo--info">Национальный проект</span></p></a>
-                    <a href="#"><img src="img/home/aor-logo.png" alt="aor-logo"></a>
+                    <a href="https://old.oncology-association.ru/"><img src="img/home/aor-logo.png" alt="aor-logo"></a>
                 </div>
                 <div class="footer__menu  footer__line d-flex flex-row justify-content-between align-items-start">
                     <ul class="nav footer__list d-flex flex-column justify-content-between align-items-start">
-                        <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="index.html">Главная
-                            </a>
-                        </li>
                         <li class="nav-item footer__item">
                             <a class="nav-link footer__link" href="news.html">Новости</a>
                         </li>
@@ -144,24 +198,14 @@
                             <a class="nav-link footer__link" href="events.html">Мероприятия</a>
                         </li>
                         <li class="nav-item footer__item">
-                            <a class="nav-link  footer__link" href="#">База знаний</a>
+                            <a class="nav-link footer__link" href="оncological-diseases.html">Онкологические
+                                заболевания</a>
+                        </li>
+                        <li class="nav-item footer__item">
+                            <a class="nav-link  footer__link" href="useful-contacts.html">Полезные контакты</a>
                         </li>
                     </ul>
-                    <ul class="nav footer__list d-flex flex-column justify-content-between align-items-start">
-                        <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="#">Помощь пациентам
-                            </a>
-                        </li>
-                        <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="#">Реабилитация</a>
-                        </li>
-                        <li class="nav-item footer__item">
-                            <a class="nav-link footer__link" href="#">Виды рака</a>
-                        </li>
-                        <li class="nav-item footer__item">
-                            <a class="nav-link  footer__link" href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
+
                 </div>
                 <ul class="footer__info">
                     <li class="footer__info--item d-flex flex-row  align-items-center"><img

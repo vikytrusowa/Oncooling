@@ -15,6 +15,7 @@
       height: 100%;
       z-index: -1;
       width: calc(100% - 140px);
+      transition: background 0.4s ease;
     }
 
     &:before {
@@ -56,21 +57,23 @@
 
 .tidings .tidings__data--hidden {
   opacity: 0;
+  transition:  opacity 0.4s ease;
   margin-bottom: 0;
 }
 
 .tidings__item:hover .tidings__data--hidden {
   opacity: 1;
-  transition: 0.2s linear;
+  transition: opacity 0.4s ease;
 }
 
 .tidings__item:hover .tidings__data {
-opacity: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .tidings__item:hover:after {
   background: #F4F6FA;
-  transition: 0.2s linear;
+  transition: background 0.4s ease;
 }
 
 .tidings .activity__subtitle {
