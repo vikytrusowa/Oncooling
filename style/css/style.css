@@ -383,9 +383,11 @@
   }
   .tidings__item:hover .tidings__data--hidden {
     visibility: hidden;
+    opacity: 0;
   }
   .tidings__item:hover .tidings__data {
     visibility: visible;
+    opacity: 0.5;
   }
   .tidings__image {
     width: 50%;
@@ -399,6 +401,9 @@
 @media screen and (max-width: 576px) {
   .tidings__image {
     width: 100%;
+  }
+  .tidings__item:after {
+    width: 0;
   }
 }
 #datepicker .today {
@@ -538,7 +543,20 @@
     width: 95%;
   }
   .events .events__item:hover .events__block:before {
-    width: calc(100% + 36px);
+    width: 0;
+    display: none;
+  }
+  .events .events__item:hover .events__data {
+    color: #373D4F;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .events .events__item:hover .activity__subtitle,
+  .events .events__item:hover .activity__text {
+    color: #373D4F;
   }
 }
 .contacts__title {

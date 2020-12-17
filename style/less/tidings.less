@@ -57,7 +57,7 @@
 
 .tidings .tidings__data--hidden {
   opacity: 0;
-  transition:  opacity 0.4s ease;
+  transition: opacity 0.4s ease;
   margin-bottom: 0;
 }
 
@@ -117,10 +117,12 @@
 
   .tidings__item:hover .tidings__data--hidden {
     visibility: hidden;
+    opacity: 0;
   }
 
   .tidings__item:hover .tidings__data {
     visibility: visible;
+    opacity: 0.5;
   }
 
   .tidings__image {
@@ -137,5 +139,9 @@
 @media screen and (max-width: 576px) {
   .tidings__image {
     width: 100%;
+  }
+
+  .tidings__item:after {
+    width: 0;
   }
 }
