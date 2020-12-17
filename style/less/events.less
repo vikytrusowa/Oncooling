@@ -43,6 +43,17 @@
   &__block{
     width: 82%;
     position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: -27px;
+      right: 0;
+      height: calc(100% + 54px);
+      z-index: -1;
+      width: calc(100% + 66px);
+      transition: background 0.4s ease;
+    }
+
   }
   &__item{
     position: relative;
@@ -80,13 +91,6 @@
 .events .events__item:hover{
 
   .events__block:before{
-    content: "";
-    position: absolute;
-    top: -27px;
-    right: 0;
-    height: calc(100% + 54px);
-    z-index: -1;
-    width: calc(100% + 66px);
     background: #F4F6FA;
     transition: background 0.4s ease;
   }
