@@ -14,7 +14,7 @@ $(document).ready(function () {
         slidesPerView: "auto",
         loop: true,
         loopedSlides: 5,
-        slideToClickedSlide:true
+        slideToClickedSlide: true
     });
     var galleryBottom = new Swiper('.partners__description', {
         spaceBetween: 30,
@@ -22,8 +22,12 @@ $(document).ready(function () {
         touchRatio: 0.2,
         loop: true,
         loopedSlides: 5, //looped slides should be the same
-        slideToClickedSlide: true
-
+        slideToClickedSlide: true,
+        breakpoints: {
+            768: {
+                autoHeight: true
+            }
+        }
     });
     swiper.params.control = galleryBottom;
     galleryBottom.params.control = swiper;
