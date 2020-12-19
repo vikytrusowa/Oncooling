@@ -6,19 +6,22 @@
   //  width: 38px;
   //height: 38px;
 }
-#datepicker .day:hover{
+
+#datepicker .day:hover {
   border-radius: 50%;
 }
-#datepicker .active{
+
+#datepicker .active {
   border-radius: 50%;
   background: #F4A93D;
 }
+
 //#datepicker .prev{
 //  background: url("../../img/home/arrow.svg") no-repeat;
 //}
-.events{
-  &__data{
-    font-family: "Roboto",sans-serif;
+.events {
+  &__data {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -27,7 +30,8 @@
     display: block;
     transition: all 0.4s linear;
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       position: absolute;
       left: -37px;
@@ -40,10 +44,12 @@
       transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
   }
-  &__block{
+
+  &__block {
     width: 82%;
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       position: absolute;
       top: -27px;
@@ -55,11 +61,14 @@
     }
 
   }
-  &__item{
+
+  &__item {
     position: relative;
     padding: 27px 0;
     align-items: center;
-    &:not(:last-child):before{
+    text-decoration: none;
+
+    &:not(:last-child):before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -69,32 +78,39 @@
       border-bottom: 1px solid #D2D6E1;
     }
   }
-  &__info{
+
+  &__info {
     width: 72%;
   }
 
 }
-.events .crayfish__navigation:after{
+
+.events .crayfish__navigation:after {
   display: none;
 }
-.events .activity__subtitle{
+
+.events .activity__subtitle {
   min-height: auto;
 }
-.events .activity__text{
+
+.events .activity__text {
   margin-bottom: 0;
   min-height: auto;
   color: #373D4F;
 }
-.events .events__author{
+
+.events .events__author {
   color: #7B8196;
 }
-.events .events__item:hover{
 
-  .events__block:before{
+.events .events__item:hover {
+
+  .events__block:before {
     background: #F4F6FA;
     transition: background 0.4s ease;
   }
-  .events__data{
+
+  .events__data {
     font-family: "Bebas Neue";
     font-weight: bold;
     font-size: 14px;
@@ -102,12 +118,14 @@
     color: #F4A93D;
     transition: all 0.4s linear;
   }
+
   .activity__subtitle,
-  .activity__text{
+  .activity__text {
     color: #F4A93D;
     transition: color 0.4s linear;
   }
-  .events__data:before{
+
+  .events__data:before {
     width: 13px;
     height: 13px;
     left: -39px;
@@ -116,40 +134,50 @@
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1)
   }
 }
-@media screen and (max-width: 990px){
+
+@media screen and (max-width: 990px) {
   .events__data {
     width: 24%;
   }
 }
-@media screen and (max-width: 768px){
-  .events__datepicker .datepicker-inline{
+
+@media screen and (max-width: 768px) {
+  .events__datepicker .datepicker-inline {
     margin: 0 auto;
   }
+
   .events__data {
     width: 22%;
   }
 }
-@media screen and (max-width: 576px){
-  .events .events__block{
+
+@media screen and (max-width: 576px) {
+  .events .events__block {
     flex-direction: column;
   }
-  .events__item{
+
+  .events__item {
     align-items: flex-start;
   }
+
   .events__data {
     width: 100%;
     margin-bottom: 15px;
-    &:before{
+
+    &:before {
       display: none;
     }
   }
+
   .events__info {
     width: 95%;
   }
+
   .events .events__item:hover .events__block:before {
     width: 0;
     display: none;
   }
+
   .events .events__item:hover .events__data {
     color: #373D4F;
     font-family: "Roboto", sans-serif;
@@ -158,7 +186,8 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .events .events__item:hover .activity__subtitle, .events .events__item:hover .activity__text{
+
+  .events .events__item:hover .activity__subtitle, .events .events__item:hover .activity__text {
     color: #373D4F;
   }
 }
