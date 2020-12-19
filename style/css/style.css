@@ -174,21 +174,9 @@
   border-radius: 0;
   width: 50%;
 }
-.crayfish__dropdown--button:hover,
-.crayfish__dropdown--button:visited,
-.crayfish__dropdown--button:active,
-.crayfish__dropdown--button:focus,
-.crayfish__dropdown--button:focus-within,
-.crayfish__dropdown--button:focus-visible {
-  outline: none;
-  background: transparent;
-  color: #373D4F;
-  box-shadow: none;
-}
 .crayfish__dropdown--menu {
   width: 95%;
-  overflow-y: scroll;
-  height: 250px;
+  height: auto;
 }
 .crayfish__dropdown--menu .crayfish__link {
   width: 100%;
@@ -208,6 +196,17 @@
   bottom: -9px;
   border-bottom: 1px solid #D2D6E1;
   opacity: 0.5;
+}
+.crayfish .crayfish__navigation .crayfish__dropdown--button:hover,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:visited,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:active,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus-within,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus-visible {
+  outline: none;
+  background: transparent;
+  color: #373D4F;
+  box-shadow: none;
 }
 .basement__title {
   margin-bottom: 40px;

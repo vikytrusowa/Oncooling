@@ -198,22 +198,12 @@
       background: transparent;
       border-radius: 0;
       width: 50%;
-      &:hover,
-      &:visited,
-      &:active,
-      &:focus,
-      &:focus-within,
-      &:focus-visible{
-        outline: none;
-        background: transparent;
-        color: #373D4F;
-        box-shadow: none;
-      }
+
     }
     &--menu{
       width: 95%;
-      overflow-y: scroll;
-      height: 250px;
+      //overflow-y: scroll;
+      height: auto;
       //&::-webkit-scrollbar {
       //  width: 12px;
       //
@@ -247,7 +237,17 @@
     }
   }
 }
-
+.crayfish .crayfish__navigation .crayfish__dropdown--button:hover,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:visited,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:active,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus-within,
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus-visible{
+  outline: none;
+  background: transparent;
+  color: #373D4F;
+  box-shadow: none;
+}
 .basement {
   &__title {
     margin-bottom: 40px;
