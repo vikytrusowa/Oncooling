@@ -173,13 +173,15 @@
   background: transparent;
   border-radius: 0;
   width: 50%;
-  padding: 6px 0;
+  padding: 6px;
   text-decoration: none;
   display: block;
 }
 .crayfish__dropdown--menu {
   width: 95%;
-  height: 775px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 250px;
 }
 .crayfish__dropdown--menu .crayfish__link {
   width: 100%;
