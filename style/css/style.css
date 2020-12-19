@@ -173,6 +173,7 @@
   background: transparent;
   border-radius: 0;
   width: 50%;
+  padding: 6px 0;
 }
 .crayfish__dropdown--menu {
   width: 95%;

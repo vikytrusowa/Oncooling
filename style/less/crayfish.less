@@ -191,16 +191,18 @@
 
   &__dropdown {
     display: none;
-    &--button{
+
+    &--button {
       border: 1px solid #373D4F;
       box-sizing: border-box;
       color: #373D4F;
       background: transparent;
       border-radius: 0;
       width: 50%;
-
+      padding: 6px 0;
     }
-    &--menu{
+
+    &--menu {
       width: 95%;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
@@ -215,15 +217,17 @@
       //  border-radius: 4.0px;
       //  height: 31px;
       //}
-      & .crayfish__link{
+      & .crayfish__link {
         width: 100%;
         white-space: pre-wrap;
         margin-bottom: 26px;
         padding: 0 5px;
         position: relative;
-        &:hover{
+
+        &:hover {
           background: transparent;
         }
+
         &:not(:last-child):before {
           content: "";
           width: 100%;
@@ -238,17 +242,19 @@
     }
   }
 }
+
 .crayfish .crayfish__navigation .crayfish__dropdown--button:hover,
 .crayfish .crayfish__navigation .crayfish__dropdown--button:visited,
 .crayfish .crayfish__navigation .crayfish__dropdown--button:active,
 .crayfish .crayfish__navigation .crayfish__dropdown--button:focus,
 .crayfish .crayfish__navigation .crayfish__dropdown--button:focus-within,
-.crayfish .crayfish__navigation .crayfish__dropdown--button:focus-visible{
+.crayfish .crayfish__navigation .crayfish__dropdown--button:focus-visible {
   outline: none;
   background: transparent;
   color: #373D4F;
   box-shadow: none;
 }
+
 .basement {
   &__title {
     margin-bottom: 40px;
@@ -411,9 +417,11 @@
   .crayfish__advertising--inner {
     width: 100%;
   }
+
   .crayfish__dropdown--button {
     width: 91%;
   }
+
   .crayfish__link {
     color: #F4A93D;
     //&:after {
