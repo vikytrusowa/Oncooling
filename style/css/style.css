@@ -165,6 +165,7 @@
 }
 .crayfish__dropdown {
   display: none;
+  position: relative;
 }
 .crayfish__dropdown--button {
   border: 1px solid #373D4F;
@@ -176,30 +177,29 @@
   padding: 6px;
   text-decoration: none;
   display: block;
+  position: relative;
+}
+.crayfish__dropdown--button:before {
+  content: "\25bc";
+  position: absolute;
+  right: 6px;
+  top: 6px;
 }
 .crayfish__dropdown--menu {
+  position: absolute;
+  top: 100%;
   width: 95%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 250px;
+  background: #FFFFFF;
+  z-index: 999;
+  display: none;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .crayfish__dropdown--menu .crayfish__link {
   width: 100%;
   white-space: pre-wrap;
   margin-bottom: 26px;
   position: relative;
-}
-.crayfish__dropdown--menu .crayfish__link:hover {
-  background: transparent;
-}
-.crayfish__dropdown--menu .crayfish__link:not(:last-child):before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -9px;
-  border-bottom: 1px solid #D2D6E1;
-  opacity: 0.5;
 }
 .crayfish .crayfish__navigation .crayfish__dropdown--button:hover,
 .crayfish .crayfish__navigation .crayfish__dropdown--button:visited,

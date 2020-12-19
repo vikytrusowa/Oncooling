@@ -9,6 +9,10 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $(target).offset().top}, 300);
         return false;
     });
+    $('.crayfish__dropdown--button').click(function (e){
+        e.preventDefault();
+        $('.crayfish__dropdown--menu').slideToggle(300);
+    })
     var swiper = new Swiper('.partners__slider', {
         spaceBetween: 10,
         slidesPerView: "auto",
