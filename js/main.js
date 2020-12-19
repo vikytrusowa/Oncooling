@@ -14,6 +14,7 @@ $(document).ready(function () {
         slidesPerView: "auto",
         loop: true,
         loopedSlides: 5,
+        slideToClickedSlide:true
     });
     var galleryBottom = new Swiper('.partners__description', {
         spaceBetween: 30,
