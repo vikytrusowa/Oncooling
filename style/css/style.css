@@ -190,15 +190,6 @@
   overflow-y: scroll;
   height: 250px;
 }
-.crayfish__dropdown--menu::-webkit-scrollbar {
-  width: 12px;
-  background-color: #e1e1e1;
-}
-.crayfish__dropdown--menu::-webkit-scrollbar-thumb {
-  background-color: #b7b7b7;
-  border-radius: 4px;
-  height: 31px;
-}
 .crayfish__dropdown--menu .crayfish__link {
   width: 100%;
   white-space: pre-wrap;
