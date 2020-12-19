@@ -179,9 +179,7 @@
 }
 .crayfish__dropdown--menu {
   width: 95%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 250px;
+  height: 775px;
 }
 .crayfish__dropdown--menu .crayfish__link {
   width: 100%;
