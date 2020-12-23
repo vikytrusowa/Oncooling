@@ -433,7 +433,7 @@
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
-      line-height: 14px;
+      line-height: 120%;
       text-transform: uppercase;
       color: #373D4F;
       display: block;
@@ -530,30 +530,50 @@
 
   &__wrap {
     margin-top: 30px;
+    width: 33%;
   }
 
   &__block {
-    width: 63%;
+    width: 100%;
     margin: 0 auto;
   }
 
   &__subtitle {
-    font-family: "Bebas Neue";
+    //font-family: "Bebas Neue";
+    //font-style: normal;
+    //font-weight: bold;
+    //font-size: 14px;
+    //line-height: 14px;
+    //text-transform: uppercase;
+    //color: #373D4F;
+    font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 40px;
+    line-height: 40px;
     text-transform: uppercase;
     color: #373D4F;
     margin-bottom: 35px;
 
+  }
+  &__link{
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #373D4F;
   }
 
   &__image {
     max-width: 100%;
     margin: 0 auto;
     display: block;
-    max-height: 433px;
+    max-height: 354px;
+  }
+  &__slider{
+    width: 54.2%;
+    margin: 0;
   }
 }
 
@@ -755,6 +775,7 @@
   &__image {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 
   &__prev {
