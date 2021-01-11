@@ -109,6 +109,7 @@
   position: relative;
   display: block;
   text-decoration: none;
+  transition: color 0.2s linear;
 
   &:after {
     content: "";
@@ -118,13 +119,15 @@
     width: 49px;
     border-bottom: 2px solid #7B8196;
     border-radius: 1.5px;
+    transition: border-color 0.2s linear;
   }
 
   &:hover {
     color: #F4A93D;
-
+    transition: color 0.2s linear;
     &:after {
       border-color: #F4A93D;
+      transition: border-color 0.2s linear;
     }
   }
 
@@ -224,12 +227,12 @@
         position: absolute;
         left: 0;
         border-bottom: 1px solid transparent;
-        transition: all 0.1s linear;
+        transition: all 0.2s linear;
       }
 
       &:hover::before {
         font-weight: bold;
-        transition: all 0.1s linear;
+        transition: all 0.2s linear;
       }
 
       &:hover {
