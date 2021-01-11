@@ -3,6 +3,7 @@
 @import "events";
 @import "contacts";
 @import "institutions";
+
 @font-face {
   font-family: 'Bebas Neue';
   src: url('../../fonts/BebasNeueBold.eot');
@@ -94,7 +95,7 @@
   width: 78%;
   display: block;
   margin: 0 auto;
-
+  transition: color 0.2s linear, border-color 0.2s linear;
 }
 
 .content-link {
@@ -184,12 +185,13 @@
       line-height: 100%;
       color: #7B8196;
       display: block;
+      transition: color .2s linear;
     }
   }
 
   &__menu {
     justify-content: space-between;
-   // width: 57.8%;
+    // width: 57.8%;
     width: 48%;
     position: relative;
 
@@ -211,21 +213,29 @@
       color: #373D4F;
       padding: 0;
       position: relative;
+      transition: all 0.2s linear;
+
+      &:after {
+        transition: all 0.2s linear;
+      }
 
       &::before {
         content: attr(data-title);
         position: absolute;
         left: 0;
         border-bottom: 1px solid transparent;
+        transition: all 0.1s linear;
       }
 
       &:hover::before {
         font-weight: bold;
+        transition: all 0.1s linear;
       }
 
       &:hover {
         text-shadow: 0 0 .65px #333, 0 0 .65px #333;
         color: #373D4F;
+        transition: all 0.2s linear;
 
         &:after {
           content: "";
@@ -236,6 +246,7 @@
           right: -14px;
           z-index: 99;
           border-radius: 1.5px;
+          transition: all 0.2s linear;
         }
       }
     }
@@ -251,6 +262,7 @@
         font-weight: bold;
         border-bottom: 1px solid transparent;
       }
+
       &:after {
         content: "";
         position: absolute;
@@ -337,6 +349,7 @@
         background: #7B8196;
         border-radius: 1.5px;
         width: 100%;
+        transition: border-color .2s linear;
       }
     }
   }
@@ -469,6 +482,16 @@
   }
 }
 
+.header__logo:hover .header__logo--info {
+  color: #F4A93D;
+  transition: color .2s linear;
+}
+
+.header__login:hover .header__login--text:after {
+  border-color: #F4A93D;
+  transition: border-color .2s linear;
+}
+
 .header__search--input::placeholder {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -558,8 +581,9 @@
     margin-bottom: 35px;
 
   }
-  &__link{
-    font-family: "Roboto",sans-serif;
+
+  &__link {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -573,7 +597,8 @@
     display: block;
     max-height: 354px;
   }
-  &__slider{
+
+  &__slider {
     width: 54.2%;
     margin: 0;
   }
@@ -619,9 +644,11 @@
     margin: 0 auto;
     position: relative;
     border: 1px solid transparent;
-    transition: .2s linear;
-    &:after{
-      transition: .2s linear;
+    transition: all .2s linear;
+
+    &:after {
+      content: "";
+      transition: all .2s linear;
     }
   }
 
@@ -704,7 +731,7 @@
 
 .activity .activity__slider .activity__item:hover {
   transform: scale(1.18);
-  transition: .2s linear;
+  transition: all .2s linear;
 }
 
 .activity .activity__slider .activity__item:hover:after {
@@ -718,7 +745,7 @@
   top: 0;
   left: 0;
   right: 0;
-  transition: .2s linear;
+  transition: all .2s linear;
   box-shadow: 0 0 25px rgba(44, 10, 0, 0.14);
 
 }
@@ -727,6 +754,7 @@
 .activity .activity__slider .activity__item:hover .content-button {
   color: #F4A93D;
   border-color: #F4A93D;
+  transition: color 0.2s linear, border-color 0.2s linear;
 }
 
 
@@ -764,7 +792,8 @@
     position: relative;
     border: 1px solid transparent;
     transition: .2s linear;
-    &:after{
+
+    &:after {
       transition: .2s linear;
     }
   }
@@ -847,12 +876,14 @@
   }
 
   &__link {
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 120%;
     color: #373D4F;
+    transition: color .2s linear;
+
     &:before {
       content: "";
       position: absolute;
@@ -994,7 +1025,8 @@
   &__description {
     display: none;
   }
-  &__info{
+
+  &__info {
     //min-height: 543px;
   }
 }
@@ -1154,7 +1186,7 @@
   }
 
   &__menu {
-   // width: 30%;
+    // width: 30%;
     width: 23%;
   }
 
@@ -1282,7 +1314,7 @@
   }
 
   .footer__menu {
-   // width: 35%;
+    // width: 35%;
     width: 27%;
   }
 
@@ -1295,17 +1327,20 @@
   }
 }
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 1040px) {
   .header__search {
     display: none;
   }
+
   .header__menu {
     display: none;
   }
+
   .header__menu-mobile {
     display: flex;
     width: 47px;
   }
+
   .header__block {
     position: relative;
   }
@@ -1380,6 +1415,7 @@
   }
 
 }
+
 @media screen and (max-width: 990px) {
   .content-name {
     font-size: 170px;
@@ -1449,7 +1485,6 @@
   .header__social {
     margin: 0 auto;
   }
-
 
 
   .header__login {
@@ -1534,9 +1569,11 @@
     padding-bottom: 95px;
     position: relative;
   }
+
   .header__section--item:first-child:after {
-   border-right: none;
+    border-right: none;
   }
+
   .header__section--item:last-child:after {
     border-left: none;
   }
@@ -1607,6 +1644,7 @@
   .diseases__image {
     max-height: 396px;
   }
+
   .footer__menu {
     width: 42%;
   }
@@ -1624,10 +1662,12 @@
   .header__section--item {
     width: 32%;
   }
+
   .header__section--item:hover:after {
     top: 0;
     box-shadow: none;
   }
+
   .header__image--mob {
     display: block;
     width: 100%;

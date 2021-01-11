@@ -20,9 +20,10 @@
     margin-bottom: 36px;
     display: block;
     text-decoration: none;
-
+    transition: color .2s linear;
     &--link:hover {
       color: #F4A93D;
+      transition: color .2s linear;
     }
 
     &:after,
@@ -51,19 +52,31 @@
     color: #373D4F;
     text-decoration: none;
     position: relative;
-
+    transition: color .2s linear;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 44px;
+      z-index: 99;
+      border-radius: 1.5px;
+      border-bottom: 3px solid transparent;
+      transition: border-color .2s linear;
+    }
     &:hover {
       color: #F4A93D;
-
+      transition: color .2s linear;
       &:after {
         content: "";
         position: absolute;
-        border-bottom: 3px solid #F4A93D;
         bottom: -10px;
         left: 0;
         width: 44px;
         z-index: 99;
         border-radius: 1.5px;
+        border-bottom: 3px solid #F4A93D;
+        transition: border-color .2s linear;
       }
     }
 
