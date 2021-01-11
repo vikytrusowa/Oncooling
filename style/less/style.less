@@ -219,7 +219,15 @@
       transition: all 0.2s linear;
 
       &:after {
-        transition: all 0.2s linear;
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid transparent;
+        bottom: -29px;
+        left: -14px;
+        right: -14px;
+        z-index: 99;
+        border-radius: 1.5px;
+        transition: border-color 0.2s linear;
       }
 
       &::before {
@@ -249,7 +257,7 @@
           right: -14px;
           z-index: 99;
           border-radius: 1.5px;
-          transition: all 0.2s linear;
+          transition: border-color 0.2s linear;
         }
       }
     }
