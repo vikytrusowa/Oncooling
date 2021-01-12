@@ -78,6 +78,7 @@
   }
 }
 
+// editing  start
 .content-button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -125,6 +126,7 @@
   &:hover {
     color: #F4A93D;
     transition: color 0.2s linear;
+
     &:after {
       border-color: #F4A93D;
       transition: border-color 0.2s linear;
@@ -133,6 +135,7 @@
 
 }
 
+//end
 .content-name {
   position: absolute;
   bottom: -133px;
@@ -207,6 +210,7 @@
       border-bottom: 1px solid #D2D6E1;
     }
 
+    //edited start
     &--link {
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -262,6 +266,7 @@
       }
     }
 
+    // end
     &--active {
       text-shadow: 0 0 .65px #333, 0 0 .65px #333;
       color: #373D4F;
@@ -350,7 +355,7 @@
     &--text {
       margin-right: 7px;
       position: relative;
-
+      //editing start
       &:after {
         content: "";
         position: absolute;
@@ -364,6 +369,8 @@
       }
     }
   }
+
+  //end
 
   &__content {
     padding: 0;
@@ -493,6 +500,7 @@
   }
 }
 
+//editing start
 .header__logo:hover .header__logo--info {
   color: #F4A93D;
   transition: color .2s linear;
@@ -503,6 +511,7 @@
   transition: border-color .2s linear;
 }
 
+//end
 .header__search--input::placeholder {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -648,6 +657,7 @@
     }
   }
 
+  //editing start
   &__item {
     text-decoration: none;
     width: 100%;
@@ -663,6 +673,7 @@
     }
   }
 
+  //end
   &__picture {
     position: relative;
     width: 100%;
@@ -739,7 +750,7 @@
 
 }
 
-
+//editing start
 .activity .activity__slider .activity__item:hover {
   transform: scale(1.18);
   transition: all .2s linear;
@@ -768,6 +779,7 @@
   transition: color 0.2s linear, border-color 0.2s linear;
 }
 
+//end
 
 .news {
   padding-bottom: 122px;
@@ -794,7 +806,7 @@
     }
   }
 
-
+  //editing start
   &__item {
     text-decoration: none;
     width: 100%;
@@ -809,6 +821,7 @@
     }
   }
 
+  //end
   &__picture {
     position: relative;
     width: 100%;
@@ -886,6 +899,7 @@
 
   }
 
+  //editing start
   &__link {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -918,6 +932,7 @@
     }
   }
 
+  //end
   &__content {
     padding: 0;
   }
@@ -1268,10 +1283,58 @@
     width: 87%;
   }
 }
+
+//editing start
 .footer__logo:hover .header__logo--info {
   color: #F4A93D;
   transition: color .2s linear;
 }
+
+//end
+
+//add new style
+.error {
+  margin-bottom: 50px;
+  padding: 0 0 50px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #7B8196;
+    width: 100%;
+  }
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__name {
+    //position: absolute;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  &__button{
+    &:hover{
+      color: #F4A93D;
+      border-color: #F4A93D;
+    }
+  }
+}
+
+.error .content-button {
+  width: 200px;
+}
+
+.error .crayfish__subtitle {
+  margin-bottom: 36px;
+}
+//end
 @media screen and (min-width: 1800px) {
   .content-name {
     right: 30%;
@@ -1597,7 +1660,11 @@
   .content-name {
     display: none;
   }
-
+//add new style
+  .error .error__name {
+    display: block;
+  }
+//end
   .partners__slide {
     width: 65%;
   }
