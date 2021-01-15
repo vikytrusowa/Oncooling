@@ -97,13 +97,24 @@ $(document).ready(function () {
         );
     });
 
+//add new code
+
     $(".quiz__item").click(function () {
         var question = $(this).attr('data-number');
-        if (question < 7) {
+        if (question < 11) {
             var current = '#question_' + question;
             var next = '#question_' + (parseInt(question) + 1);
             $(current).addClass('quiz__element--hidden');
             $(next).removeClass('quiz__element--hidden')
+        }
+    });
+    $(".quiz__button").click(function () {
+        var number = $(this).attr('data-prev');
+        if (number < 11) {
+            var element = '#question_' + number;
+            var prev = '#question_' + (parseInt(number) - 1);
+            $(element).addClass('quiz__element--hidden');
+            $(prev).removeClass('quiz__element--hidden');
         }
     });
 
@@ -126,6 +137,10 @@ $(document).ready(function () {
             }
         }
     }
+
+    //end
+
+
     document.getElementById("map") && ymaps.ready(function () {
         var o = new ymaps.Map("map", {
             center: [55.760180, 37.517482],

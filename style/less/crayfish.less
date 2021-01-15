@@ -331,6 +331,9 @@
   }
 }
 .quiz {
+  &__content{
+    padding: 20px 0 0 0;
+  }
   &__question {
     font-family: "Bebas Neue";
     font-style: normal;
@@ -348,22 +351,11 @@
     font-size: 13px;
     line-height: 16px;
     color: #373D4F;
+    transition: color 0.2s linear;
     //color: #7B8196;
     //opacity: 0.9;
   }
-  //&__button {
-  //  background-color: #d29274;
-  //  font-family: 'Gilroy Thin', sans-serif;
-  //  line-height: 37px;
-  //  font-weight: 100;
-  //  letter-spacing: 0.02em;
-  //  width: 272px;
-  //  text-decoration: none;
-  //  box-shadow: 0 0 7px 1px #d29274;
-  //  &:hover{
-  //    box-shadow: none;
-  //  }
-  //}
+
   &__item {
     //margin-bottom: 20px;
     align-items: center;
@@ -374,7 +366,16 @@
     }
   }
 }
-
+.quiz__content .quiz__button {
+  width: 120px;
+  margin-left: 0;
+  margin-top: 20px;
+  &:hover{
+    color: #F4A93D;
+    border-color: #F4A93D;
+    transition: color 0.2s linear,border-color 0.2s linear;
+  }
+}
 .quiz__input[type='radio'] {
   position: relative;
   height: 33px;
@@ -392,23 +393,43 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 13px;
-  height: 13px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   background:  #F4A93D;
+  transition: all 0.5s cubic-bezier(0.215,0.61,0.355,1);
 }
-
-.quiz__input[type='radio']:checked::after {
+.quiz__item:hover .quiz__input[type='radio']::before {
   content: '';
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background-color:  #F4A93D;
-  transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+  visibility: visible;
+  transform: translateY(-60%);
+  transition: all 0.5s cubic-bezier(0.215,0.61,0.355,1);
+}
+.quiz__item:hover .quiz__label{
+  color: #F4A93D;
+  transition: color 0.2s linear;
+}
+ .quiz__input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color:  #F4A93D;
+   transform: translateY(-60%);
+   transition: all 0.5s cubic-bezier(0.215,0.61,0.355,1);
   visibility: visible;
 }
 //end
