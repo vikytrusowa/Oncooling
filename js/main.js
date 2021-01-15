@@ -97,7 +97,35 @@ $(document).ready(function () {
         );
     });
 
+    $(".quiz__item").click(function () {
+        var question = $(this).attr('data-number');
+        if (question < 7) {
+            var current = '#question_' + question;
+            var next = '#question_' + (parseInt(question) + 1);
+            $(current).addClass('quiz__element--hidden');
+            $(next).removeClass('quiz__element--hidden')
+        }
+    });
 
+    inputs=document.getElementsByTagName("input");
+    for(var i=0;i<inputs.length;i++)
+    {
+        if(inputs[i].type=="radio")
+        {
+            inputs[i].onchange=function()
+            {
+                inputs=document.getElementsByTagName("input");
+                for(var i=0;i<inputs.length;i++)
+                {
+                    if(inputs[i].type=="radio")
+                    {
+                        inputs[i].checked=false;
+                    }
+                    this.checked=true;
+                }
+            }
+        }
+    }
     document.getElementById("map") && ymaps.ready(function () {
         var o = new ymaps.Map("map", {
             center: [55.760180, 37.517482],
