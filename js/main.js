@@ -13,6 +13,8 @@ $(document).ready(function () {
         e.preventDefault();
         $('.crayfish__dropdown--menu').slideToggle(300);
     })
+
+
     var swiper = new Swiper('.partners__slider', {
         spaceBetween: 10,
         slidesPerView: "auto",
