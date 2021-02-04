@@ -13,7 +13,7 @@
           rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/css/style.css?ver=34">
+    <link rel="stylesheet" href="style/css/style.css?ver=35">
 </head>
 <body>
 <header class="header header__crayfish">
@@ -96,15 +96,157 @@
     <div class="content-container">
         <div class="content-row institutions__box">
             <h2 class="content-title crayfish__title institutions__title">Полезные контакты</h2>
-            <form>
-                <select class="institutions__select">
-                    <option disabled class="institutions__name">Выберите город</option>
-                    <option id="0000" value="0000" selected="">Ваш регион: Москва</option>
-                    <option id="0001" value="0000" selected="">Ваш регион: Санкт-Петербург</option>
-                    <option id="0002" value="0000" selected="">Ваш регион: Новосибирск</option>
-                    <option id="0003" value="0000" selected="">Ваш регион: Екатеринбург</option>
-                </select>
-            </form>
+
+            <div class="institutions__address">
+                <button id="btn_modal_window" class="open-modal institutions__button">Ваш регион:<span
+                        class="institutions__button--value"> Москва</span> <img src="/img/home/pointer.svg"
+                                                                                alt="pointer"></button>
+                <div id="my_modal" class="modal">
+                    <div class="modal_content">
+                        <div class="content-row institutions__heading align-items-center justify-content-between">
+                            <h4 class="institutions__subtitle">Выбор города</h4>
+                            <span class="close_modal_window">×</span>
+                        </div>
+                        <form class="content-row institutions__search header__search header__search--inner justify-content-around">
+                            <input class="form-control mr-2 header__search--input" type="search" placeholder="Поиск"
+                                   aria-label="Search">
+                            <button class="btn  header__search--button" type="submit"><img src="img/home/search.svg"
+                                                                                           alt="search">
+                            </button>
+                        </form>
+                        <div class="institutions__value content-row justify-content-between">
+                            <ul class="institutions__list">
+                                <li>
+                                    <a href="#" class="institutions__city">Москва</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="institutions__city">Санкт-Петербург</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Новосибирск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Екатеринбург</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Казань</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Нижний Новгород</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Челябинск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Самара</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Омск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Ростов-на-Дону</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Уфа</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Красноярск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Воронеж</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Пермь</a>
+                                </li>
+                            </ul>
+                            <ul class="institutions__list">
+                                <li>
+                                    <a href="#" class="institutions__city">Волгоград</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="institutions__city">Краснодар</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Саратов</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Тольятти</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Тюмень</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Ижевск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Барнаул</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Ульяновск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Иркутск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Хабаровск</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Ярославль</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Владивосток</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Махачкала</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Оренбург</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Томск</a>
+                                </li>
+                            </ul>
+                            <ul class="institutions__list">
+                                <li>
+                                    <a href="#" class="institutions__city">Кемерово</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="institutions__city">Новокузнецк</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Рязань</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Набережные Челны</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Астрахань</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Пенза</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Киров</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Липецк</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Калининград</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Чебоксары</a>
+                                </li>
+                                <li>
+                                    <a  href="#" class="institutions__city">Тула</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="crayfish__wrap content-row justify-content-between">

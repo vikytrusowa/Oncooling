@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+    //add new modal in institutions.html
+    $("#btn_modal_window").click(function (){
+        $("#my_modal").toggleClass("modal__open")
+    });
+    $(".close_modal_window").click(function (){
+        $("#my_modal").removeClass("modal__open")
+    });
+
+    //end
+
     $(".header__menu--open").click(function (e) {
         e.preventDefault();
         $(".header__menu-mobile").toggleClass("header__menu-mobile--visible")
@@ -9,7 +20,7 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $(target).offset().top}, 300);
         return false;
     });
-    $('.crayfish__dropdown--button').click(function (e){
+    $('.crayfish__dropdown--button').click(function (e) {
         e.preventDefault();
         $('.crayfish__dropdown--menu').slideToggle(300);
     })
@@ -120,21 +131,16 @@ $(document).ready(function () {
         }
     });
 
-    inputs=document.getElementsByTagName("input");
-    for(var i=0;i<inputs.length;i++)
-    {
-        if(inputs[i].type=="radio")
-        {
-            inputs[i].onchange=function()
-            {
-                inputs=document.getElementsByTagName("input");
-                for(var i=0;i<inputs.length;i++)
-                {
-                    if(inputs[i].type=="radio")
-                    {
-                        inputs[i].checked=false;
+    inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].type == "radio") {
+            inputs[i].onchange = function () {
+                inputs = document.getElementsByTagName("input");
+                for (var i = 0; i < inputs.length; i++) {
+                    if (inputs[i].type == "radio") {
+                        inputs[i].checked = false;
                     }
-                    this.checked=true;
+                    this.checked = true;
                 }
             }
         }

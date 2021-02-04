@@ -10,7 +10,7 @@
   }
 
   &__link {
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
@@ -39,22 +39,52 @@
   }
 
 
-
-  &__select {
+  &__button {
     border: 1px solid #D2D6E1;
     box-sizing: border-box;
     padding: 7px 12px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #373D4F;
+    background: transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active,
+    &:focus-within,
+    &:focus-visible {
+      outline: none;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    &:hover {
+      color: #373D4F;
+    }
+
+    &--value {
+      font-weight: bold;
+      margin-right: 8px;
+    }
   }
 
   &__inner {
     width: 24%;
   }
-  &__name{
-    font-family: Montserrat;
+
+
+  &__subtitle {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 100%;
+    margin-bottom: 0;
     color: #3E3E51;
   }
 
@@ -93,9 +123,40 @@
     align-items: flex-start;
     width: 92%;
   }
-  &__wrap{
+
+  &__wrap {
     width: 70%;
   }
+
+  &__heading {
+    margin-bottom: 40px;
+  }
+
+  &__address {
+    position: relative;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__city {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+
+    &:hover {
+      color: #F4A93D;
+    }
+  }
+
 }
 
 .institutions .institutions__picture {
@@ -113,14 +174,54 @@
 .institutions .institutions__indent {
   margin-bottom: 12px;
 }
-@media screen and (max-width: 1200px){
+
+
+.institutions .institutions__search {
+  max-width: 390px;
+  margin-bottom: 50px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left: -45%;
+  top: 100%;
+  width: 660px;
+  height: auto;
+  overflow: auto;
+  background: #FFFFFF;
+  z-index: 1000;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(139, 138, 214, 0.3);
+}
+
+.modal__open {
+  display: block;
+}
+
+.modal .modal_content {
+  padding: 33px 37px;
+  width: 100%;
+  z-index: 99999;
+}
+
+.modal .modal_content .close_modal_window {
+  color: #373D4F;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
   .institutions__inner {
     width: 30%;
   }
-  .institutions__item{
+
+  .institutions__item {
     width: 43%;
   }
 }
+
 @media screen and (max-width: 990px) {
   .institutions .institutions__info {
     flex-direction: column-reverse;
@@ -130,9 +231,11 @@
     align-items: flex-start;
     flex-direction: column-reverse;
   }
+
   .institutions__wrap {
     width: 100%;
   }
+
   .institutions__inner {
     width: 45%;
     margin-bottom: 30px;
@@ -145,18 +248,69 @@
   .institutions .contacts__item {
     width: 47%;
   }
+
+  .modal {
+    left: -100%;
+    width: 555px;
+  }
+
+  .institutions .institutions__search {
+    display: flex;
+    width: 80%;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    left: auto;
+    right: 0;
+    width: 350px;
+  }
 
+  .institutions .institutions__value {
+    flex-direction: column;
+  }
+
+  .institutions .institutions__search {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 576px) {
   .institutions__inner {
     width: 64%;
   }
+
+  .institutions .institutions__box {
+    flex-direction: column;
+  }
+
+  .institutions__title {
+    margin-bottom: 36px;
+  }
+
+  .institutions__address {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+  }
+
+  .modal .modal_content {
+    padding: 20px;
+    text-align: left;
+  }
+
   .institutions .institutions__item {
     margin-bottom: 25px;
     width: 100%;
   }
+
   .institutions .contacts__item {
     width: 66%;
   }
@@ -164,6 +318,7 @@
   .institutions__info {
     width: 86%;
   }
+
   .institutions .institutions__wrap {
     flex-direction: column;
   }
