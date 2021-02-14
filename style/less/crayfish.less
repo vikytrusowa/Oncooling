@@ -287,6 +287,27 @@
   box-shadow: none;
 }
 
+.crayfish__partners{
+justify-content: space-around;
+}
+.crayfish__partners--item{
+  align-items: center;
+}
+.crayfish__partners .crayfish__link{
+  display: block;
+  margin-bottom: 10px;
+}
+.crayfish__partners  .crayfish__link:hover:after {
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .crayfish .crayfish__partners{
+    flex-direction: column;
+  }
+  .crayfish__partners--item{
+    margin-bottom: 30px;
+  }
+}
 .basement {
   &__title {
     margin-bottom: 40px;

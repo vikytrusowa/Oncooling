@@ -3,6 +3,7 @@
 @import "events";
 @import "contacts";
 @import "institutions";
+@import "video";
 
 @font-face {
   font-family: 'Bebas Neue';
@@ -155,6 +156,7 @@
 
 .header {
   padding: 48px 0 20px;
+  position: relative;
 
   &__heading {
     margin-bottom: 55px;
@@ -499,8 +501,149 @@
   &__menu-mobile {
     display: none;
   }
+
+  &__modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+
+    &--open {
+      display: block;
+    }
+
+    &--content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 33px 37px;
+      z-index: 99999;
+      width: 460px;
+      height: auto;
+      overflow: auto;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 30px rgba(139, 138, 214, 0.3);
+      border-radius: 6px;
+    }
+
+    &--close {
+      color: #373D4F;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &--heading{
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #3E3E51;
+    width: 72%
+  }
+
+  &__form {
+    width: 388px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #373D4F;
+    padding: 13px;
+    border: none;
+    border-bottom: 1px solid #D2D6E1;
+    margin-bottom: 7px;
+    width: 100%;
+    position: relative;
+
+    &:focus{
+      outline: none;
+    }
+    &--inner{
+      margin-bottom: 47px;
+    }
+  }
+  &__textarea{
+    border: 1px solid #D2D6E1;
+    padding: 11px 14px;
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #373D4F;
+    width: 100%;
+    min-height: 73px;
+    margin-bottom: 65px;
+    &:focus{
+      outline: none;
+    }
+  }
+  &__checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      margin-bottom: 15px;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #7782A7;
+        border-radius: 3px;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+      }
+    }
+  }
+}
+.required{
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #F4A93D;
+}
+.header__checkbox:checked+label::before {
+  border-color: #7782A7;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
+.header__input::-webkit-input-placeholder,
+.header__input:-ms-input-placeholder,
+.header__input::-ms-input-placeholder,
+.header__input::placeholder,
+.header__textarea::-webkit-input-placeholder,
+.header__textarea:-ms-input-placeholder,
+.header__textarea::-ms-input-placeholder,
+.header__textarea::placeholder{
+  color: #D2D6E1;
+}
 //editing start
 .header__logo:hover .header__logo--info {
   color: #F4A93D;
@@ -1320,8 +1463,9 @@
     right: 0;
     margin: 0 auto;
   }
-  &__button{
-    &:hover{
+
+  &__button {
+    &:hover {
       color: #F4A93D;
       border-color: #F4A93D;
     }
@@ -1335,6 +1479,7 @@
 .error .crayfish__subtitle {
   margin-bottom: 36px;
 }
+
 //end
 @media screen and (min-width: 1800px) {
   .content-name {
@@ -1661,11 +1806,13 @@
   .content-name {
     display: none;
   }
-//add new style
+
+  //add new style
   .error .error__name {
     display: block;
   }
-//end
+
+  //end
   .partners__slide {
     width: 65%;
   }
@@ -1736,7 +1883,14 @@
   .partners__slider .partners__tabs:after {
     width: 254px;
   }
-
+  .header__modal--content{
+    padding: 15px 10px;
+    z-index: 99999;
+    width: 280px;
+  }
+  .header__form {
+    width: 240px;
+  }
   .header__image {
     display: none;
   }
