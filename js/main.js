@@ -14,6 +14,13 @@ $(document).ready(function () {
     $(".header__modal--close").click(function (){
         $("#login-modal").removeClass("header__modal--open")
     });
+    $(".header__button--check").click(function (){
+        $("#login-modal").removeClass("header__modal--open")
+        $("#check-modal").toggleClass("header__modal--open")
+    });
+    $(".header__modal--close").click(function (){
+        $("#check-modal").removeClass("header__modal--open")
+    });
     jQuery(document).ready(function() {
         jQuery("[required]").after("<span class='required'>*</span>");
     });

@@ -94,17 +94,40 @@
     <div id="login-modal" class="header__modal">
         <div class="header__modal--content">
             <div class="content-row justify-content-between align-items-center header__modal--heading">
+                <h4 class="header__subtitle">Войти в личный кабинет</h4>
+                <span class="header__modal--close">×</span>
+            </div>
+            <form class="header__form">
+                <input class="header__input" placeholder="Логин" required type="text">
+                <input class="header__input header__input--inner" placeholder="Пароль" required type="password">
+                <a href="#" class="content-button header__button">Вход</a>
+                <a href="#" class="content-link header__link">Забыли пароль?</a>
+                <div class="content-row align-items-center justify-content-center">
+                    <p class="header__modal--text">У вас нет аккаунта?</p>
+                    <a href="#" class="content-button header__button header__button--check">Зарегестрироваться</a>
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <div id="check-modal" class="header__modal">
+        <div class="header__modal--content">
+            <div class="content-row justify-content-between align-items-center header__modal--heading">
                 <h4 class="header__subtitle">Зарегистрируйтесь в личном кабинете</h4>
                 <span class="header__modal--close">×</span>
             </div>
             <form class="header__form">
-
-                <input class="header__input" placeholder="Имя" type="text">
+                <input class="header__input" placeholder="ФИО" type="text" required>
                 <input class="header__input" placeholder="Пол" required type="text">
                 <input class="header__input" placeholder="Возраст" required type="text">
                 <input class="header__input" placeholder="Город" type="text">
                 <input class="header__input" placeholder="e-mail" type="email">
-                <input class="header__input header__input--inner" placeholder="Телефон" required type="tel">
+                <input class="header__input" placeholder="Телефон" required type="tel">
+                <input class="header__input" placeholder="Пароль" required type="password">
+                <input class="header__input header__input--inner" placeholder="Повторить пароль" required
+                       type="password">
                 <textarea class="header__textarea" placeholder="Вид заболевания"></textarea>
                 <div class="content-row">
                     <input type="checkbox" id="data-processing" class="header__checkbox">
