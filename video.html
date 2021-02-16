@@ -77,7 +77,7 @@
                 </li>
             </ul>
             <div class="d-flex flex-row justify-content-between align-items-center">
-                <button id="login" class="btn header__login"><span class="header__login--text">Вход</span><img
+                <button  class="btn login header__login"><span class="header__login--text">Вход</span><img
                         src="img/home/login.svg"
                         alt="login"></button>
                 <form class="content-row header__search justify-content-around">
@@ -95,28 +95,35 @@
         <div class="header__modal--content">
             <div class="content-row justify-content-between align-items-center header__modal--heading">
                 <h4 class="header__subtitle">Войти в личный кабинет</h4>
-                <span class="header__modal--close">×</span>
+                <span id="login-close" class="header__modal--close">×</span>
             </div>
             <form class="header__form">
-                <input class="header__input" placeholder="Логин" required type="text">
+                <input class="header__input" placeholder="Номер телефона" required type="tel">
                 <input class="header__input header__input--inner" placeholder="Пароль" required type="password">
                 <a href="#" class="content-button header__button">Вход</a>
                 <a href="#" class="content-link header__link">Забыли пароль?</a>
                 <div class="content-row align-items-center justify-content-center">
                     <p class="header__modal--text">У вас нет аккаунта?</p>
-                    <a href="#" class="content-button header__button header__button--check">Зарегестрироваться</a>
-
+                    <a href="#" class="content-button header__button header__button--check">Зарегистрироваться</a>
                 </div>
             </form>
+        </div>
+    </div>
+    <div id="authorization-modal" class="header__modal">
+        <div class="header__modal--content">
+            <div class="content-row justify-content-end align-items-center header__modal--heading">
 
-
+                <span id="authorization-close" class="header__modal--close">×</span>
+            </div>
+            <h4 class="header__subtitle header__subtitle--inner">Для получения доступа к этой странице авторизуйтесь в личном кабинете</h4>
+            <button  class="login content-button header__button">Вход</button>
         </div>
     </div>
     <div id="check-modal" class="header__modal">
         <div class="header__modal--content">
             <div class="content-row justify-content-between align-items-center header__modal--heading">
                 <h4 class="header__subtitle">Зарегистрируйтесь в личном кабинете</h4>
-                <span class="header__modal--close">×</span>
+                <span id="check-close" class="header__modal--close">×</span>
             </div>
             <form class="header__form">
                 <input class="header__input" placeholder="ФИО" type="text" required>
