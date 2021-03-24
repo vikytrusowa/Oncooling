@@ -7,7 +7,24 @@ $(document).ready(function () {
         $("#my_modal").removeClass("modal__open")
     });
 
-    //add new code 1
+    //add new code
+
+    $('.crayfish__list--other').on('click', function (e) {
+        e.preventDefault();
+        $(".crayfish__link").removeClass('crayfish__link--active');
+        $(".crayfish__sublist").removeClass('crayfish__sublist--open');
+        $(this).toggleClass('crayfish__link--active');
+       $(this).next().toggleClass('crayfish__sublist--open');
+    });
+    $(".crayfish__list--other").dblclick(function(e) {
+        e.preventDefault();
+        window.location.assign($(this).attr('href'))
+    });
+    $(".crayfish__list--other").on('tap',function(e) {
+        e.preventDefault();
+        window.location.assign($(this).attr('href'))
+    });
+    //end
     $(".login").click(function (){
         $("#login-modal").toggleClass("header__modal--open")
     });
@@ -27,7 +44,7 @@ $(document).ready(function () {
     jQuery(document).ready(function() {
         jQuery("[required]").after("<span class='required'>*</span>");
     });
-    //end
+
     $(".header__menu--open").click(function (e) {
         e.preventDefault();
         $(".header__menu-mobile").toggleClass("header__menu-mobile--visible")

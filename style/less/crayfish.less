@@ -42,7 +42,7 @@
     color: #373D4F;
     margin-bottom: 20px;
   }
-//editing start
+
   &__link {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -79,7 +79,6 @@
         transition: border-color .2s linear;
       }
     }
-//end
     &--active {
       color: #F4A93D;
 
@@ -113,6 +112,23 @@
       bottom: -7px;
       border-bottom: 1px solid #D2D6E1;
       opacity: 0.5;
+    }
+  }
+  &__sublist{
+    display: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    &--item{
+      margin-bottom: 16px;
+    }
+    &--link{
+      font-size: 12px;
+      line-height: 16px;
+      opacity: 0.9;
+    }
+
+    &--open{
+      display: block;
     }
   }
 
@@ -298,6 +314,9 @@ justify-content: space-around;
   margin-bottom: 10px;
 }
 .crayfish__partners  .crayfish__link:hover:after {
+  display: none;
+}
+.crayfish__content  .crayfish__link:hover:after {
   display: none;
 }
 @media screen and (max-width: 768px){
