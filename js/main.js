@@ -8,7 +8,24 @@ $(document).ready(function () {
     });
 
     //add new code
-
+    const sdk = new StreamSDK(
+        {
+            credentials: {
+                "email": "example@gmail.com", // required
+                "firstname": "Игорь", // required
+                "lastname": "Васнецов",
+                "material_id": 2753, // required
+                "middlename": "Колумбович"
+            },
+            rootId: "s-stream-root", // required
+            settings: {
+                width: '100%',
+                height: '100%',
+            }
+        }
+    )
+    sdk.init()
+    //end
     $('.crayfish__list--other').on('click', function (e) {
         e.preventDefault();
         $(".crayfish__link").removeClass('crayfish__link--active');
@@ -24,7 +41,7 @@ $(document).ready(function () {
         e.preventDefault();
         window.location.assign($(this).attr('href'))
     });
-    //end
+
     $(".login").click(function (){
         $("#login-modal").toggleClass("header__modal--open")
     });
